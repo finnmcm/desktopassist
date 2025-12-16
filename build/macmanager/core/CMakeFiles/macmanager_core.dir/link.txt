@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../Debug/lib/libmacmanager_core.a CMakeFiles/macmanager_core.dir/src/MacManager.cpp.o
+/usr/bin/ranlib ../../Debug/lib/libmacmanager_core.a

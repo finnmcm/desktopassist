@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -arch x86_64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/macassistant_cli.dir/main.cpp.o -o ../../Debug/bin/macassistant_cli  ../../Debug/lib/libmacmanager_bridge.a ../../Debug/lib/libmacmanager_core.a

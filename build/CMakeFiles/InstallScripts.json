@@ -1,0 +1,10 @@
+{
+	"InstallScripts" : 
+	[
+		"/Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build/cmake_install.cmake",
+		"/Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build/macmanager/core/cmake_install.cmake",
+		"/Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build/macmanager/bridge/cmake_install.cmake",
+		"/Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build/tools/cli/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

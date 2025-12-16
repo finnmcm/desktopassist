@@ -26,5 +26,6 @@ set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/$<CONFIG>/lib)
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/$<CONFIG>/lib)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/$<CONFIG>/bin)
 
-add_subdirectory(native/core)
-add_subdirectory(native/bridge)
+add_subdirectory(macmanager/core)
+add_subdirectory(macmanager/bridge)
+add_subdirectory(tools/cli)

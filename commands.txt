@@ -1,0 +1,20 @@
+1. CONFIGURE (only do when changing the top level CMakeLists.txt):
+
+cmake -S . -B build -DCMAKE_BUILD_TYPE=Debug
+
+2. COMPILE (the one you use all the time to re compile the project)
+
+cmake --build build -j
+
+3. RUN THE PROJECT 
+
+cmake --build build --target run
+
+
+CLEANING THE BUILD FOLDER
+
+cmake --build build --target clean
+cmake --build build -j
+
+
+

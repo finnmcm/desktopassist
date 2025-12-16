@@ -1,0 +1,2 @@
+macmanager/bridge/CMakeFiles/macmanager_bridge.dir/src/MacBridge.cpp.o: \
+  /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/macmanager/bridge/src/MacBridge.cpp
