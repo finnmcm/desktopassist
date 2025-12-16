@@ -64,6 +64,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "macmanager/core/CMakeFiles/macmanager_core.dir/DependInfo.cmake"
   "macmanager/bridge/CMakeFiles/macmanager_bridge.dir/DependInfo.cmake"
-  "tools/cli/CMakeFiles/macassistant_cli.dir/DependInfo.cmake"
+  "tools/cli/CMakeFiles/macmanager.dir/DependInfo.cmake"
   "tools/cli/CMakeFiles/run.dir/DependInfo.cmake"
   )

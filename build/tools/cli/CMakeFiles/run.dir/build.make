@@ -66,8 +66,8 @@ include tools/cli/CMakeFiles/run.dir/compiler_depend.make
 # Include the progress variables for this target.
 include tools/cli/CMakeFiles/run.dir/progress.make
 
-tools/cli/CMakeFiles/run: Debug/bin/macassistant_cli
-	cd /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build/tools/cli && ../../Debug/bin/macassistant_cli
+tools/cli/CMakeFiles/run: Debug/bin/macmanager
+	cd /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build/Debug/bin && /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build/Debug/bin/macmanager
 
 tools/cli/CMakeFiles/run.dir/codegen:
 .PHONY : tools/cli/CMakeFiles/run.dir/codegen

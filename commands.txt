@@ -10,11 +10,25 @@ cmake --build build -j
 
 cmake --build build --target run
 
+**BETTER WAY TO RUN THE PROJECT WITH ARGS**
+./build/Debug/bin/macmanager
+
 
 CLEANING THE BUILD FOLDER
 
 cmake --build build --target clean
 cmake --build build -j
+
+
+Additionally, if build folder is cluttered, just run:
+rm -rf build
+mkdir build
+
+DB stored at:
+~/Library/Application\ Support/MacAssistant/
+- open with: 
+sqlite3 "$HOME/Library/Application Support/MacAssistant/state.db"
+
 
 
 

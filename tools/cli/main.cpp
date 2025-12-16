@@ -1,4 +1,5 @@
-#include <iostream>
-int main(){
-    std::cout << "Hi" << std::endl;
+#include "run_app.h"
+int main(int argc, char** argv){
+    macmanager::run_app(argc, argv);
+
 }

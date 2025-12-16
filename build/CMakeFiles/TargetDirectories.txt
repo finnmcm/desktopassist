@@ -6,7 +6,7 @@
 /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build/macmanager/bridge/CMakeFiles/macmanager_bridge.dir
 /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build/macmanager/bridge/CMakeFiles/edit_cache.dir
 /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build/macmanager/bridge/CMakeFiles/rebuild_cache.dir
-/Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build/tools/cli/CMakeFiles/macassistant_cli.dir
+/Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build/tools/cli/CMakeFiles/macmanager.dir
 /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build/tools/cli/CMakeFiles/run.dir
 /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build/tools/cli/CMakeFiles/edit_cache.dir
 /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build/tools/cli/CMakeFiles/rebuild_cache.dir

@@ -143,17 +143,17 @@ macmanager_bridge/fast:
 .PHONY : macmanager_bridge/fast
 
 #=============================================================================
-# Target rules for targets named macassistant_cli
+# Target rules for targets named macmanager
 
 # Build rule for target.
-macassistant_cli: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 macassistant_cli
-.PHONY : macassistant_cli
+macmanager: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 macmanager
+.PHONY : macmanager
 
 # fast build rule for target.
-macassistant_cli/fast:
-	$(MAKE) $(MAKESILENT) -f tools/cli/CMakeFiles/macassistant_cli.dir/build.make tools/cli/CMakeFiles/macassistant_cli.dir/build
-.PHONY : macassistant_cli/fast
+macmanager/fast:
+	$(MAKE) $(MAKESILENT) -f tools/cli/CMakeFiles/macmanager.dir/build.make tools/cli/CMakeFiles/macmanager.dir/build
+.PHONY : macmanager/fast
 
 #=============================================================================
 # Target rules for targets named run
@@ -177,7 +177,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... run"
-	@echo "... macassistant_cli"
+	@echo "... macmanager"
 	@echo "... macmanager_bridge"
 	@echo "... macmanager_core"
 .PHONY : help

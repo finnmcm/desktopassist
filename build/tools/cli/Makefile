@@ -117,18 +117,18 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-tools/cli/CMakeFiles/macassistant_cli.dir/rule:
-	cd /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tools/cli/CMakeFiles/macassistant_cli.dir/rule
-.PHONY : tools/cli/CMakeFiles/macassistant_cli.dir/rule
+tools/cli/CMakeFiles/macmanager.dir/rule:
+	cd /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tools/cli/CMakeFiles/macmanager.dir/rule
+.PHONY : tools/cli/CMakeFiles/macmanager.dir/rule
 
 # Convenience name for target.
-macassistant_cli: tools/cli/CMakeFiles/macassistant_cli.dir/rule
-.PHONY : macassistant_cli
+macmanager: tools/cli/CMakeFiles/macmanager.dir/rule
+.PHONY : macmanager
 
 # fast build rule for target.
-macassistant_cli/fast:
-	cd /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build && $(MAKE) $(MAKESILENT) -f tools/cli/CMakeFiles/macassistant_cli.dir/build.make tools/cli/CMakeFiles/macassistant_cli.dir/build
-.PHONY : macassistant_cli/fast
+macmanager/fast:
+	cd /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build && $(MAKE) $(MAKESILENT) -f tools/cli/CMakeFiles/macmanager.dir/build.make tools/cli/CMakeFiles/macmanager.dir/build
+.PHONY : macmanager/fast
 
 # Convenience name for target.
 tools/cli/CMakeFiles/run.dir/rule:
@@ -149,7 +149,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	cd /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build && $(MAKE) $(MAKESILENT) -f tools/cli/CMakeFiles/macassistant_cli.dir/build.make tools/cli/CMakeFiles/macassistant_cli.dir/main.cpp.o
+	cd /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build && $(MAKE) $(MAKESILENT) -f tools/cli/CMakeFiles/macmanager.dir/build.make tools/cli/CMakeFiles/macmanager.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -157,7 +157,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	cd /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build && $(MAKE) $(MAKESILENT) -f tools/cli/CMakeFiles/macassistant_cli.dir/build.make tools/cli/CMakeFiles/macassistant_cli.dir/main.cpp.i
+	cd /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build && $(MAKE) $(MAKESILENT) -f tools/cli/CMakeFiles/macmanager.dir/build.make tools/cli/CMakeFiles/macmanager.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -165,7 +165,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	cd /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build && $(MAKE) $(MAKESILENT) -f tools/cli/CMakeFiles/macassistant_cli.dir/build.make tools/cli/CMakeFiles/macassistant_cli.dir/main.cpp.s
+	cd /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build && $(MAKE) $(MAKESILENT) -f tools/cli/CMakeFiles/macmanager.dir/build.make tools/cli/CMakeFiles/macmanager.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -177,7 +177,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... run"
-	@echo "... macassistant_cli"
+	@echo "... macmanager"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

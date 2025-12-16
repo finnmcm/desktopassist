@@ -95,7 +95,6 @@ macassistant_cli_EXTERNAL_OBJECTS =
 
 Debug/bin/macassistant_cli: tools/cli/CMakeFiles/macassistant_cli.dir/main.cpp.o
 Debug/bin/macassistant_cli: tools/cli/CMakeFiles/macassistant_cli.dir/build.make
-Debug/bin/macassistant_cli: Debug/lib/libmacmanager_bridge.a
 Debug/bin/macassistant_cli: Debug/lib/libmacmanager_core.a
 Debug/bin/macassistant_cli: tools/cli/CMakeFiles/macassistant_cli.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../../Debug/bin/macassistant_cli"

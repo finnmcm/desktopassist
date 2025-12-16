@@ -130,29 +130,53 @@ macmanager_core/fast:
 	cd /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build && $(MAKE) $(MAKESILENT) -f macmanager/core/CMakeFiles/macmanager_core.dir/build.make macmanager/core/CMakeFiles/macmanager_core.dir/build
 .PHONY : macmanager_core/fast
 
-src/MacManager.o: src/MacManager.cpp.o
-.PHONY : src/MacManager.o
+src/app.o: src/app.cpp.o
+.PHONY : src/app.o
 
 # target to build an object file
-src/MacManager.cpp.o:
-	cd /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build && $(MAKE) $(MAKESILENT) -f macmanager/core/CMakeFiles/macmanager_core.dir/build.make macmanager/core/CMakeFiles/macmanager_core.dir/src/MacManager.cpp.o
-.PHONY : src/MacManager.cpp.o
+src/app.cpp.o:
+	cd /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build && $(MAKE) $(MAKESILENT) -f macmanager/core/CMakeFiles/macmanager_core.dir/build.make macmanager/core/CMakeFiles/macmanager_core.dir/src/app.cpp.o
+.PHONY : src/app.cpp.o
 
-src/MacManager.i: src/MacManager.cpp.i
-.PHONY : src/MacManager.i
+src/app.i: src/app.cpp.i
+.PHONY : src/app.i
 
 # target to preprocess a source file
-src/MacManager.cpp.i:
-	cd /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build && $(MAKE) $(MAKESILENT) -f macmanager/core/CMakeFiles/macmanager_core.dir/build.make macmanager/core/CMakeFiles/macmanager_core.dir/src/MacManager.cpp.i
-.PHONY : src/MacManager.cpp.i
+src/app.cpp.i:
+	cd /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build && $(MAKE) $(MAKESILENT) -f macmanager/core/CMakeFiles/macmanager_core.dir/build.make macmanager/core/CMakeFiles/macmanager_core.dir/src/app.cpp.i
+.PHONY : src/app.cpp.i
 
-src/MacManager.s: src/MacManager.cpp.s
-.PHONY : src/MacManager.s
+src/app.s: src/app.cpp.s
+.PHONY : src/app.s
 
 # target to generate assembly for a file
-src/MacManager.cpp.s:
-	cd /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build && $(MAKE) $(MAKESILENT) -f macmanager/core/CMakeFiles/macmanager_core.dir/build.make macmanager/core/CMakeFiles/macmanager_core.dir/src/MacManager.cpp.s
-.PHONY : src/MacManager.cpp.s
+src/app.cpp.s:
+	cd /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build && $(MAKE) $(MAKESILENT) -f macmanager/core/CMakeFiles/macmanager_core.dir/build.make macmanager/core/CMakeFiles/macmanager_core.dir/src/app.cpp.s
+.PHONY : src/app.cpp.s
+
+src/file_manager.o: src/file_manager.cpp.o
+.PHONY : src/file_manager.o
+
+# target to build an object file
+src/file_manager.cpp.o:
+	cd /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build && $(MAKE) $(MAKESILENT) -f macmanager/core/CMakeFiles/macmanager_core.dir/build.make macmanager/core/CMakeFiles/macmanager_core.dir/src/file_manager.cpp.o
+.PHONY : src/file_manager.cpp.o
+
+src/file_manager.i: src/file_manager.cpp.i
+.PHONY : src/file_manager.i
+
+# target to preprocess a source file
+src/file_manager.cpp.i:
+	cd /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build && $(MAKE) $(MAKESILENT) -f macmanager/core/CMakeFiles/macmanager_core.dir/build.make macmanager/core/CMakeFiles/macmanager_core.dir/src/file_manager.cpp.i
+.PHONY : src/file_manager.cpp.i
+
+src/file_manager.s: src/file_manager.cpp.s
+.PHONY : src/file_manager.s
+
+# target to generate assembly for a file
+src/file_manager.cpp.s:
+	cd /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build && $(MAKE) $(MAKESILENT) -f macmanager/core/CMakeFiles/macmanager_core.dir/build.make macmanager/core/CMakeFiles/macmanager_core.dir/src/file_manager.cpp.s
+.PHONY : src/file_manager.cpp.s
 
 # Help Target
 help:
@@ -163,9 +187,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... macmanager_core"
-	@echo "... src/MacManager.o"
-	@echo "... src/MacManager.i"
-	@echo "... src/MacManager.s"
+	@echo "... src/app.o"
+	@echo "... src/app.i"
+	@echo "... src/app.s"
+	@echo "... src/file_manager.o"
+	@echo "... src/file_manager.i"
+	@echo "... src/file_manager.s"
 .PHONY : help
 
 
