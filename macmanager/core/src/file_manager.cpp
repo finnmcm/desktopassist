@@ -1,12 +1,28 @@
 #include "file_manager.h"
 #include <cstdlib>
 #include <iostream>
+#include "database.cpp"
+#include <thread>
 
 namespace fs = std::filesystem;
 
 namespace macmanager {
     FileManager::FileManager(){
         root = std::getenv("HOME");
+    }
+    bool FileManager::refresh_db_files(const std::vector<std::string>& locations, const std::set<std::string>& fileTypes, int numWorkers, Database& db){
+        std::vector<std::thread> threads;
+        std::deque<fs::path> workQueue;
+        threads.reserve(numWorkers);
+        std::mutex m;
+        for(int i = 0; i < numWorkers; i++){
+            threads.emplace_back(file_worker, i, std::ref(workQueue), std::ref(m), std::ref(db));
+        }
+        
+        for(std::thread& t : threads){
+            if(t.joinable())
+                t.join();
+        }
     }
     bool FileManager::find(const std::string& filename, fs::path& filepath){
         //DESKTOP
@@ -29,5 +45,8 @@ namespace macmanager {
         fs::path downloads = root / "Downloads";
         fs::path documents = root / "Documents";
         return false;
+    }
+    void file_worker(int id, std::deque<fs::path> workQueue, std::mutex& m, Database& db){
+
     }
 }

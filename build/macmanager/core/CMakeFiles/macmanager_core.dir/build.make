@@ -53,10 +53,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist
+CMAKE_SOURCE_DIR = /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build
+CMAKE_BINARY_DIR = /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build
 
 # Include any dependencies generated for this target.
 include macmanager/core/CMakeFiles/macmanager_core.dir/depend.make
@@ -73,58 +73,74 @@ macmanager/core/CMakeFiles/macmanager_core.dir/codegen:
 .PHONY : macmanager/core/CMakeFiles/macmanager_core.dir/codegen
 
 macmanager/core/CMakeFiles/macmanager_core.dir/src/app.cpp.o: macmanager/core/CMakeFiles/macmanager_core.dir/flags.make
-macmanager/core/CMakeFiles/macmanager_core.dir/src/app.cpp.o: /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/macmanager/core/src/app.cpp
+macmanager/core/CMakeFiles/macmanager_core.dir/src/app.cpp.o: /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/macmanager/core/src/app.cpp
 macmanager/core/CMakeFiles/macmanager_core.dir/src/app.cpp.o: macmanager/core/CMakeFiles/macmanager_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object macmanager/core/CMakeFiles/macmanager_core.dir/src/app.cpp.o"
-	cd /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build/macmanager/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT macmanager/core/CMakeFiles/macmanager_core.dir/src/app.cpp.o -MF CMakeFiles/macmanager_core.dir/src/app.cpp.o.d -o CMakeFiles/macmanager_core.dir/src/app.cpp.o -c /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/macmanager/core/src/app.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object macmanager/core/CMakeFiles/macmanager_core.dir/src/app.cpp.o"
+	cd /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build/macmanager/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT macmanager/core/CMakeFiles/macmanager_core.dir/src/app.cpp.o -MF CMakeFiles/macmanager_core.dir/src/app.cpp.o.d -o CMakeFiles/macmanager_core.dir/src/app.cpp.o -c /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/macmanager/core/src/app.cpp
 
 macmanager/core/CMakeFiles/macmanager_core.dir/src/app.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/macmanager_core.dir/src/app.cpp.i"
-	cd /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build/macmanager/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/macmanager/core/src/app.cpp > CMakeFiles/macmanager_core.dir/src/app.cpp.i
+	cd /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build/macmanager/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/macmanager/core/src/app.cpp > CMakeFiles/macmanager_core.dir/src/app.cpp.i
 
 macmanager/core/CMakeFiles/macmanager_core.dir/src/app.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/macmanager_core.dir/src/app.cpp.s"
-	cd /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build/macmanager/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/macmanager/core/src/app.cpp -o CMakeFiles/macmanager_core.dir/src/app.cpp.s
+	cd /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build/macmanager/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/macmanager/core/src/app.cpp -o CMakeFiles/macmanager_core.dir/src/app.cpp.s
 
 macmanager/core/CMakeFiles/macmanager_core.dir/src/file_manager.cpp.o: macmanager/core/CMakeFiles/macmanager_core.dir/flags.make
-macmanager/core/CMakeFiles/macmanager_core.dir/src/file_manager.cpp.o: /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/macmanager/core/src/file_manager.cpp
+macmanager/core/CMakeFiles/macmanager_core.dir/src/file_manager.cpp.o: /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/macmanager/core/src/file_manager.cpp
 macmanager/core/CMakeFiles/macmanager_core.dir/src/file_manager.cpp.o: macmanager/core/CMakeFiles/macmanager_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object macmanager/core/CMakeFiles/macmanager_core.dir/src/file_manager.cpp.o"
-	cd /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build/macmanager/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT macmanager/core/CMakeFiles/macmanager_core.dir/src/file_manager.cpp.o -MF CMakeFiles/macmanager_core.dir/src/file_manager.cpp.o.d -o CMakeFiles/macmanager_core.dir/src/file_manager.cpp.o -c /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/macmanager/core/src/file_manager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object macmanager/core/CMakeFiles/macmanager_core.dir/src/file_manager.cpp.o"
+	cd /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build/macmanager/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT macmanager/core/CMakeFiles/macmanager_core.dir/src/file_manager.cpp.o -MF CMakeFiles/macmanager_core.dir/src/file_manager.cpp.o.d -o CMakeFiles/macmanager_core.dir/src/file_manager.cpp.o -c /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/macmanager/core/src/file_manager.cpp
 
 macmanager/core/CMakeFiles/macmanager_core.dir/src/file_manager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/macmanager_core.dir/src/file_manager.cpp.i"
-	cd /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build/macmanager/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/macmanager/core/src/file_manager.cpp > CMakeFiles/macmanager_core.dir/src/file_manager.cpp.i
+	cd /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build/macmanager/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/macmanager/core/src/file_manager.cpp > CMakeFiles/macmanager_core.dir/src/file_manager.cpp.i
 
 macmanager/core/CMakeFiles/macmanager_core.dir/src/file_manager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/macmanager_core.dir/src/file_manager.cpp.s"
-	cd /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build/macmanager/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/macmanager/core/src/file_manager.cpp -o CMakeFiles/macmanager_core.dir/src/file_manager.cpp.s
+	cd /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build/macmanager/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/macmanager/core/src/file_manager.cpp -o CMakeFiles/macmanager_core.dir/src/file_manager.cpp.s
+
+macmanager/core/CMakeFiles/macmanager_core.dir/src/database.cpp.o: macmanager/core/CMakeFiles/macmanager_core.dir/flags.make
+macmanager/core/CMakeFiles/macmanager_core.dir/src/database.cpp.o: /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/macmanager/core/src/database.cpp
+macmanager/core/CMakeFiles/macmanager_core.dir/src/database.cpp.o: macmanager/core/CMakeFiles/macmanager_core.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object macmanager/core/CMakeFiles/macmanager_core.dir/src/database.cpp.o"
+	cd /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build/macmanager/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT macmanager/core/CMakeFiles/macmanager_core.dir/src/database.cpp.o -MF CMakeFiles/macmanager_core.dir/src/database.cpp.o.d -o CMakeFiles/macmanager_core.dir/src/database.cpp.o -c /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/macmanager/core/src/database.cpp
+
+macmanager/core/CMakeFiles/macmanager_core.dir/src/database.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/macmanager_core.dir/src/database.cpp.i"
+	cd /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build/macmanager/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/macmanager/core/src/database.cpp > CMakeFiles/macmanager_core.dir/src/database.cpp.i
+
+macmanager/core/CMakeFiles/macmanager_core.dir/src/database.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/macmanager_core.dir/src/database.cpp.s"
+	cd /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build/macmanager/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/macmanager/core/src/database.cpp -o CMakeFiles/macmanager_core.dir/src/database.cpp.s
 
 # Object files for target macmanager_core
 macmanager_core_OBJECTS = \
 "CMakeFiles/macmanager_core.dir/src/app.cpp.o" \
-"CMakeFiles/macmanager_core.dir/src/file_manager.cpp.o"
+"CMakeFiles/macmanager_core.dir/src/file_manager.cpp.o" \
+"CMakeFiles/macmanager_core.dir/src/database.cpp.o"
 
 # External object files for target macmanager_core
 macmanager_core_EXTERNAL_OBJECTS =
 
 Debug/lib/libmacmanager_core.a: macmanager/core/CMakeFiles/macmanager_core.dir/src/app.cpp.o
 Debug/lib/libmacmanager_core.a: macmanager/core/CMakeFiles/macmanager_core.dir/src/file_manager.cpp.o
+Debug/lib/libmacmanager_core.a: macmanager/core/CMakeFiles/macmanager_core.dir/src/database.cpp.o
 Debug/lib/libmacmanager_core.a: macmanager/core/CMakeFiles/macmanager_core.dir/build.make
 Debug/lib/libmacmanager_core.a: macmanager/core/CMakeFiles/macmanager_core.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library ../../Debug/lib/libmacmanager_core.a"
-	cd /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build/macmanager/core && $(CMAKE_COMMAND) -P CMakeFiles/macmanager_core.dir/cmake_clean_target.cmake
-	cd /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build/macmanager/core && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/macmanager_core.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library ../../Debug/lib/libmacmanager_core.a"
+	cd /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build/macmanager/core && $(CMAKE_COMMAND) -P CMakeFiles/macmanager_core.dir/cmake_clean_target.cmake
+	cd /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build/macmanager/core && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/macmanager_core.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 macmanager/core/CMakeFiles/macmanager_core.dir/build: Debug/lib/libmacmanager_core.a
 .PHONY : macmanager/core/CMakeFiles/macmanager_core.dir/build
 
 macmanager/core/CMakeFiles/macmanager_core.dir/clean:
-	cd /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build/macmanager/core && $(CMAKE_COMMAND) -P CMakeFiles/macmanager_core.dir/cmake_clean.cmake
+	cd /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build/macmanager/core && $(CMAKE_COMMAND) -P CMakeFiles/macmanager_core.dir/cmake_clean.cmake
 .PHONY : macmanager/core/CMakeFiles/macmanager_core.dir/clean
 
 macmanager/core/CMakeFiles/macmanager_core.dir/depend:
-	cd /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/macmanager/core /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build/macmanager/core /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build/macmanager/core/CMakeFiles/macmanager_core.dir/DependInfo.cmake "--color=$(COLOR)" macmanager_core
+	cd /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/macmanager/core /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build/macmanager/core /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build/macmanager/core/CMakeFiles/macmanager_core.dir/DependInfo.cmake "--color=$(COLOR)" macmanager_core
 .PHONY : macmanager/core/CMakeFiles/macmanager_core.dir/depend
 

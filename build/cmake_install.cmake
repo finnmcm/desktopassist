@@ -1,4 +1,4 @@
-# Install script for directory: /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist
+# Install script for directory: /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,23 +39,23 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build/macmanager/core/cmake_install.cmake")
+  include("/Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build/macmanager/core/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build/macmanager/bridge/cmake_install.cmake")
+  include("/Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build/macmanager/bridge/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build/tools/cli/cmake_install.cmake")
+  include("/Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build/tools/cli/cmake_install.cmake")
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build/install_local_manifest.txt"
+  file(WRITE "/Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
 if(CMAKE_INSTALL_COMPONENT)
@@ -71,6 +71,6 @@ else()
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "/Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

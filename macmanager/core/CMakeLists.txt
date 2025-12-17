@@ -2,6 +2,7 @@ add_library(macmanager_core ${_MM_LIB_TYPE}
   # Add all core .cpp files here
   src/app.cpp
   src/file_manager.cpp
+  src/database.cpp
   # src/FileSystem.cpp
   # src/Process.cpp
 )

@@ -57,10 +57,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist
+CMAKE_SOURCE_DIR = /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build
+CMAKE_BINARY_DIR = /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build/CMakeFiles /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build/macmanager/bridge//CMakeFiles/progress.marks
-	cd /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 macmanager/bridge/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build/CMakeFiles 0
+	cd /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build/CMakeFiles /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build/macmanager/bridge//CMakeFiles/progress.marks
+	cd /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 macmanager/bridge/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 macmanager/bridge/clean
+	cd /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 macmanager/bridge/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 macmanager/bridge/preinstall
+	cd /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 macmanager/bridge/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 macmanager/bridge/preinstall
+	cd /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 macmanager/bridge/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 macmanager/bridge/CMakeFiles/macmanager_bridge.dir/rule:
-	cd /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 macmanager/bridge/CMakeFiles/macmanager_bridge.dir/rule
+	cd /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 macmanager/bridge/CMakeFiles/macmanager_bridge.dir/rule
 .PHONY : macmanager/bridge/CMakeFiles/macmanager_bridge.dir/rule
 
 # Convenience name for target.
@@ -127,7 +127,7 @@ macmanager_bridge: macmanager/bridge/CMakeFiles/macmanager_bridge.dir/rule
 
 # fast build rule for target.
 macmanager_bridge/fast:
-	cd /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build && $(MAKE) $(MAKESILENT) -f macmanager/bridge/CMakeFiles/macmanager_bridge.dir/build.make macmanager/bridge/CMakeFiles/macmanager_bridge.dir/build
+	cd /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build && $(MAKE) $(MAKESILENT) -f macmanager/bridge/CMakeFiles/macmanager_bridge.dir/build.make macmanager/bridge/CMakeFiles/macmanager_bridge.dir/build
 .PHONY : macmanager_bridge/fast
 
 src/MacBridge.o: src/MacBridge.cpp.o
@@ -135,7 +135,7 @@ src/MacBridge.o: src/MacBridge.cpp.o
 
 # target to build an object file
 src/MacBridge.cpp.o:
-	cd /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build && $(MAKE) $(MAKESILENT) -f macmanager/bridge/CMakeFiles/macmanager_bridge.dir/build.make macmanager/bridge/CMakeFiles/macmanager_bridge.dir/src/MacBridge.cpp.o
+	cd /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build && $(MAKE) $(MAKESILENT) -f macmanager/bridge/CMakeFiles/macmanager_bridge.dir/build.make macmanager/bridge/CMakeFiles/macmanager_bridge.dir/src/MacBridge.cpp.o
 .PHONY : src/MacBridge.cpp.o
 
 src/MacBridge.i: src/MacBridge.cpp.i
@@ -143,7 +143,7 @@ src/MacBridge.i: src/MacBridge.cpp.i
 
 # target to preprocess a source file
 src/MacBridge.cpp.i:
-	cd /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build && $(MAKE) $(MAKESILENT) -f macmanager/bridge/CMakeFiles/macmanager_bridge.dir/build.make macmanager/bridge/CMakeFiles/macmanager_bridge.dir/src/MacBridge.cpp.i
+	cd /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build && $(MAKE) $(MAKESILENT) -f macmanager/bridge/CMakeFiles/macmanager_bridge.dir/build.make macmanager/bridge/CMakeFiles/macmanager_bridge.dir/src/MacBridge.cpp.i
 .PHONY : src/MacBridge.cpp.i
 
 src/MacBridge.s: src/MacBridge.cpp.s
@@ -151,7 +151,7 @@ src/MacBridge.s: src/MacBridge.cpp.s
 
 # target to generate assembly for a file
 src/MacBridge.cpp.s:
-	cd /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build && $(MAKE) $(MAKESILENT) -f macmanager/bridge/CMakeFiles/macmanager_bridge.dir/build.make macmanager/bridge/CMakeFiles/macmanager_bridge.dir/src/MacBridge.cpp.s
+	cd /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build && $(MAKE) $(MAKESILENT) -f macmanager/bridge/CMakeFiles/macmanager_bridge.dir/build.make macmanager/bridge/CMakeFiles/macmanager_bridge.dir/src/MacBridge.cpp.s
 .PHONY : src/MacBridge.cpp.s
 
 # Help Target
@@ -177,6 +177,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

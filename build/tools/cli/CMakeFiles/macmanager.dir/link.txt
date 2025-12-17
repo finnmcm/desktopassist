@@ -1,1 +1,1 @@
-/usr/bin/c++ -g -arch x86_64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/macmanager.dir/main.cpp.o -o ../../Debug/bin/macmanager  ../../Debug/lib/libmacmanager_core.a
+/usr/bin/c++ -g -arch x86_64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/macmanager.dir/main.cpp.o -o ../../Debug/bin/macmanager  ../../Debug/lib/libmacmanager_core.a /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/lib/libsqlite3.tbd

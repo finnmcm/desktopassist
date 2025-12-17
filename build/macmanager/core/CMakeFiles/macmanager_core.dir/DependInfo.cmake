@@ -8,8 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/macmanager/core/src/app.cpp" "macmanager/core/CMakeFiles/macmanager_core.dir/src/app.cpp.o" "gcc" "macmanager/core/CMakeFiles/macmanager_core.dir/src/app.cpp.o.d"
-  "/Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/macmanager/core/src/file_manager.cpp" "macmanager/core/CMakeFiles/macmanager_core.dir/src/file_manager.cpp.o" "gcc" "macmanager/core/CMakeFiles/macmanager_core.dir/src/file_manager.cpp.o.d"
+  "/Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/macmanager/core/src/app.cpp" "macmanager/core/CMakeFiles/macmanager_core.dir/src/app.cpp.o" "gcc" "macmanager/core/CMakeFiles/macmanager_core.dir/src/app.cpp.o.d"
+  "/Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/macmanager/core/src/database.cpp" "macmanager/core/CMakeFiles/macmanager_core.dir/src/database.cpp.o" "gcc" "macmanager/core/CMakeFiles/macmanager_core.dir/src/database.cpp.o.d"
+  "/Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/macmanager/core/src/file_manager.cpp" "macmanager/core/CMakeFiles/macmanager_core.dir/src/file_manager.cpp.o" "gcc" "macmanager/core/CMakeFiles/macmanager_core.dir/src/file_manager.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

@@ -53,10 +53,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist
+CMAKE_SOURCE_DIR = /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build
+CMAKE_BINARY_DIR = /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build
 
 # Utility rule file for run.
 
@@ -67,7 +67,7 @@ include tools/cli/CMakeFiles/run.dir/compiler_depend.make
 include tools/cli/CMakeFiles/run.dir/progress.make
 
 tools/cli/CMakeFiles/run: Debug/bin/macmanager
-	cd /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build/Debug/bin && /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build/Debug/bin/macmanager
+	cd /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build/Debug/bin && /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build/Debug/bin/macmanager
 
 tools/cli/CMakeFiles/run.dir/codegen:
 .PHONY : tools/cli/CMakeFiles/run.dir/codegen
@@ -81,10 +81,10 @@ tools/cli/CMakeFiles/run.dir/build: run
 .PHONY : tools/cli/CMakeFiles/run.dir/build
 
 tools/cli/CMakeFiles/run.dir/clean:
-	cd /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build/tools/cli && $(CMAKE_COMMAND) -P CMakeFiles/run.dir/cmake_clean.cmake
+	cd /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build/tools/cli && $(CMAKE_COMMAND) -P CMakeFiles/run.dir/cmake_clean.cmake
 .PHONY : tools/cli/CMakeFiles/run.dir/clean
 
 tools/cli/CMakeFiles/run.dir/depend:
-	cd /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/tools/cli /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build/tools/cli /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build/tools/cli/CMakeFiles/run.dir/DependInfo.cmake "--color=$(COLOR)" run
+	cd /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/tools/cli /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build/tools/cli /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build/tools/cli/CMakeFiles/run.dir/DependInfo.cmake "--color=$(COLOR)" run
 .PHONY : tools/cli/CMakeFiles/run.dir/depend
 

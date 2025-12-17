@@ -57,10 +57,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist
+CMAKE_SOURCE_DIR = /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build
+CMAKE_BINARY_DIR = /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build/CMakeFiles /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build/macmanager/core//CMakeFiles/progress.marks
-	cd /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 macmanager/core/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build/CMakeFiles 0
+	cd /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build/CMakeFiles /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build/macmanager/core//CMakeFiles/progress.marks
+	cd /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 macmanager/core/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 macmanager/core/clean
+	cd /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 macmanager/core/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 macmanager/core/preinstall
+	cd /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 macmanager/core/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 macmanager/core/preinstall
+	cd /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 macmanager/core/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 macmanager/core/CMakeFiles/macmanager_core.dir/rule:
-	cd /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 macmanager/core/CMakeFiles/macmanager_core.dir/rule
+	cd /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 macmanager/core/CMakeFiles/macmanager_core.dir/rule
 .PHONY : macmanager/core/CMakeFiles/macmanager_core.dir/rule
 
 # Convenience name for target.
@@ -127,7 +127,7 @@ macmanager_core: macmanager/core/CMakeFiles/macmanager_core.dir/rule
 
 # fast build rule for target.
 macmanager_core/fast:
-	cd /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build && $(MAKE) $(MAKESILENT) -f macmanager/core/CMakeFiles/macmanager_core.dir/build.make macmanager/core/CMakeFiles/macmanager_core.dir/build
+	cd /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build && $(MAKE) $(MAKESILENT) -f macmanager/core/CMakeFiles/macmanager_core.dir/build.make macmanager/core/CMakeFiles/macmanager_core.dir/build
 .PHONY : macmanager_core/fast
 
 src/app.o: src/app.cpp.o
@@ -135,7 +135,7 @@ src/app.o: src/app.cpp.o
 
 # target to build an object file
 src/app.cpp.o:
-	cd /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build && $(MAKE) $(MAKESILENT) -f macmanager/core/CMakeFiles/macmanager_core.dir/build.make macmanager/core/CMakeFiles/macmanager_core.dir/src/app.cpp.o
+	cd /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build && $(MAKE) $(MAKESILENT) -f macmanager/core/CMakeFiles/macmanager_core.dir/build.make macmanager/core/CMakeFiles/macmanager_core.dir/src/app.cpp.o
 .PHONY : src/app.cpp.o
 
 src/app.i: src/app.cpp.i
@@ -143,7 +143,7 @@ src/app.i: src/app.cpp.i
 
 # target to preprocess a source file
 src/app.cpp.i:
-	cd /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build && $(MAKE) $(MAKESILENT) -f macmanager/core/CMakeFiles/macmanager_core.dir/build.make macmanager/core/CMakeFiles/macmanager_core.dir/src/app.cpp.i
+	cd /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build && $(MAKE) $(MAKESILENT) -f macmanager/core/CMakeFiles/macmanager_core.dir/build.make macmanager/core/CMakeFiles/macmanager_core.dir/src/app.cpp.i
 .PHONY : src/app.cpp.i
 
 src/app.s: src/app.cpp.s
@@ -151,15 +151,39 @@ src/app.s: src/app.cpp.s
 
 # target to generate assembly for a file
 src/app.cpp.s:
-	cd /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build && $(MAKE) $(MAKESILENT) -f macmanager/core/CMakeFiles/macmanager_core.dir/build.make macmanager/core/CMakeFiles/macmanager_core.dir/src/app.cpp.s
+	cd /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build && $(MAKE) $(MAKESILENT) -f macmanager/core/CMakeFiles/macmanager_core.dir/build.make macmanager/core/CMakeFiles/macmanager_core.dir/src/app.cpp.s
 .PHONY : src/app.cpp.s
+
+src/database.o: src/database.cpp.o
+.PHONY : src/database.o
+
+# target to build an object file
+src/database.cpp.o:
+	cd /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build && $(MAKE) $(MAKESILENT) -f macmanager/core/CMakeFiles/macmanager_core.dir/build.make macmanager/core/CMakeFiles/macmanager_core.dir/src/database.cpp.o
+.PHONY : src/database.cpp.o
+
+src/database.i: src/database.cpp.i
+.PHONY : src/database.i
+
+# target to preprocess a source file
+src/database.cpp.i:
+	cd /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build && $(MAKE) $(MAKESILENT) -f macmanager/core/CMakeFiles/macmanager_core.dir/build.make macmanager/core/CMakeFiles/macmanager_core.dir/src/database.cpp.i
+.PHONY : src/database.cpp.i
+
+src/database.s: src/database.cpp.s
+.PHONY : src/database.s
+
+# target to generate assembly for a file
+src/database.cpp.s:
+	cd /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build && $(MAKE) $(MAKESILENT) -f macmanager/core/CMakeFiles/macmanager_core.dir/build.make macmanager/core/CMakeFiles/macmanager_core.dir/src/database.cpp.s
+.PHONY : src/database.cpp.s
 
 src/file_manager.o: src/file_manager.cpp.o
 .PHONY : src/file_manager.o
 
 # target to build an object file
 src/file_manager.cpp.o:
-	cd /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build && $(MAKE) $(MAKESILENT) -f macmanager/core/CMakeFiles/macmanager_core.dir/build.make macmanager/core/CMakeFiles/macmanager_core.dir/src/file_manager.cpp.o
+	cd /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build && $(MAKE) $(MAKESILENT) -f macmanager/core/CMakeFiles/macmanager_core.dir/build.make macmanager/core/CMakeFiles/macmanager_core.dir/src/file_manager.cpp.o
 .PHONY : src/file_manager.cpp.o
 
 src/file_manager.i: src/file_manager.cpp.i
@@ -167,7 +191,7 @@ src/file_manager.i: src/file_manager.cpp.i
 
 # target to preprocess a source file
 src/file_manager.cpp.i:
-	cd /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build && $(MAKE) $(MAKESILENT) -f macmanager/core/CMakeFiles/macmanager_core.dir/build.make macmanager/core/CMakeFiles/macmanager_core.dir/src/file_manager.cpp.i
+	cd /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build && $(MAKE) $(MAKESILENT) -f macmanager/core/CMakeFiles/macmanager_core.dir/build.make macmanager/core/CMakeFiles/macmanager_core.dir/src/file_manager.cpp.i
 .PHONY : src/file_manager.cpp.i
 
 src/file_manager.s: src/file_manager.cpp.s
@@ -175,7 +199,7 @@ src/file_manager.s: src/file_manager.cpp.s
 
 # target to generate assembly for a file
 src/file_manager.cpp.s:
-	cd /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build && $(MAKE) $(MAKESILENT) -f macmanager/core/CMakeFiles/macmanager_core.dir/build.make macmanager/core/CMakeFiles/macmanager_core.dir/src/file_manager.cpp.s
+	cd /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build && $(MAKE) $(MAKESILENT) -f macmanager/core/CMakeFiles/macmanager_core.dir/build.make macmanager/core/CMakeFiles/macmanager_core.dir/src/file_manager.cpp.s
 .PHONY : src/file_manager.cpp.s
 
 # Help Target
@@ -190,6 +214,9 @@ help:
 	@echo "... src/app.o"
 	@echo "... src/app.i"
 	@echo "... src/app.s"
+	@echo "... src/database.o"
+	@echo "... src/database.i"
+	@echo "... src/database.s"
 	@echo "... src/file_manager.o"
 	@echo "... src/file_manager.i"
 	@echo "... src/file_manager.s"
@@ -204,6 +231,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

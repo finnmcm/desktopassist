@@ -54,10 +54,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist
+CMAKE_SOURCE_DIR = /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build
+CMAKE_BINARY_DIR = /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -151,14 +151,14 @@ tools/cli/clean: tools/cli/CMakeFiles/run.dir/clean
 macmanager/core/CMakeFiles/macmanager_core.dir/all:
 	$(MAKE) $(MAKESILENT) -f macmanager/core/CMakeFiles/macmanager_core.dir/build.make macmanager/core/CMakeFiles/macmanager_core.dir/depend
 	$(MAKE) $(MAKESILENT) -f macmanager/core/CMakeFiles/macmanager_core.dir/build.make macmanager/core/CMakeFiles/macmanager_core.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build/CMakeFiles --progress-num=5,6,7 "Built target macmanager_core"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build/CMakeFiles --progress-num=5,6,7,8 "Built target macmanager_core"
 .PHONY : macmanager/core/CMakeFiles/macmanager_core.dir/all
 
 # Build rule for subdir invocation for target.
 macmanager/core/CMakeFiles/macmanager_core.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 macmanager/core/CMakeFiles/macmanager_core.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build/CMakeFiles 0
 .PHONY : macmanager/core/CMakeFiles/macmanager_core.dir/rule
 
 # Convenience name for target.
@@ -168,7 +168,7 @@ macmanager_core: macmanager/core/CMakeFiles/macmanager_core.dir/rule
 # codegen rule for target.
 macmanager/core/CMakeFiles/macmanager_core.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f macmanager/core/CMakeFiles/macmanager_core.dir/build.make macmanager/core/CMakeFiles/macmanager_core.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build/CMakeFiles --progress-num=5,6,7 "Finished codegen for target macmanager_core"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build/CMakeFiles --progress-num=5,6,7,8 "Finished codegen for target macmanager_core"
 .PHONY : macmanager/core/CMakeFiles/macmanager_core.dir/codegen
 
 # clean rule for target.
@@ -183,14 +183,14 @@ macmanager/core/CMakeFiles/macmanager_core.dir/clean:
 macmanager/bridge/CMakeFiles/macmanager_bridge.dir/all: macmanager/core/CMakeFiles/macmanager_core.dir/all
 	$(MAKE) $(MAKESILENT) -f macmanager/bridge/CMakeFiles/macmanager_bridge.dir/build.make macmanager/bridge/CMakeFiles/macmanager_bridge.dir/depend
 	$(MAKE) $(MAKESILENT) -f macmanager/bridge/CMakeFiles/macmanager_bridge.dir/build.make macmanager/bridge/CMakeFiles/macmanager_bridge.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build/CMakeFiles --progress-num=3,4 "Built target macmanager_bridge"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build/CMakeFiles --progress-num=3,4 "Built target macmanager_bridge"
 .PHONY : macmanager/bridge/CMakeFiles/macmanager_bridge.dir/all
 
 # Build rule for subdir invocation for target.
 macmanager/bridge/CMakeFiles/macmanager_bridge.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 macmanager/bridge/CMakeFiles/macmanager_bridge.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build/CMakeFiles 0
 .PHONY : macmanager/bridge/CMakeFiles/macmanager_bridge.dir/rule
 
 # Convenience name for target.
@@ -200,7 +200,7 @@ macmanager_bridge: macmanager/bridge/CMakeFiles/macmanager_bridge.dir/rule
 # codegen rule for target.
 macmanager/bridge/CMakeFiles/macmanager_bridge.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f macmanager/bridge/CMakeFiles/macmanager_bridge.dir/build.make macmanager/bridge/CMakeFiles/macmanager_bridge.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build/CMakeFiles --progress-num=3,4 "Finished codegen for target macmanager_bridge"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build/CMakeFiles --progress-num=3,4 "Finished codegen for target macmanager_bridge"
 .PHONY : macmanager/bridge/CMakeFiles/macmanager_bridge.dir/codegen
 
 # clean rule for target.
@@ -215,14 +215,14 @@ macmanager/bridge/CMakeFiles/macmanager_bridge.dir/clean:
 tools/cli/CMakeFiles/macmanager.dir/all: macmanager/core/CMakeFiles/macmanager_core.dir/all
 	$(MAKE) $(MAKESILENT) -f tools/cli/CMakeFiles/macmanager.dir/build.make tools/cli/CMakeFiles/macmanager.dir/depend
 	$(MAKE) $(MAKESILENT) -f tools/cli/CMakeFiles/macmanager.dir/build.make tools/cli/CMakeFiles/macmanager.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build/CMakeFiles --progress-num=1,2 "Built target macmanager"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build/CMakeFiles --progress-num=1,2 "Built target macmanager"
 .PHONY : tools/cli/CMakeFiles/macmanager.dir/all
 
 # Build rule for subdir invocation for target.
 tools/cli/CMakeFiles/macmanager.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tools/cli/CMakeFiles/macmanager.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build/CMakeFiles 0
 .PHONY : tools/cli/CMakeFiles/macmanager.dir/rule
 
 # Convenience name for target.
@@ -232,7 +232,7 @@ macmanager: tools/cli/CMakeFiles/macmanager.dir/rule
 # codegen rule for target.
 tools/cli/CMakeFiles/macmanager.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f tools/cli/CMakeFiles/macmanager.dir/build.make tools/cli/CMakeFiles/macmanager.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build/CMakeFiles --progress-num=1,2 "Finished codegen for target macmanager"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build/CMakeFiles --progress-num=1,2 "Finished codegen for target macmanager"
 .PHONY : tools/cli/CMakeFiles/macmanager.dir/codegen
 
 # clean rule for target.
@@ -247,14 +247,14 @@ tools/cli/CMakeFiles/macmanager.dir/clean:
 tools/cli/CMakeFiles/run.dir/all: tools/cli/CMakeFiles/macmanager.dir/all
 	$(MAKE) $(MAKESILENT) -f tools/cli/CMakeFiles/run.dir/build.make tools/cli/CMakeFiles/run.dir/depend
 	$(MAKE) $(MAKESILENT) -f tools/cli/CMakeFiles/run.dir/build.make tools/cli/CMakeFiles/run.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build/CMakeFiles --progress-num= "Built target run"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build/CMakeFiles --progress-num= "Built target run"
 .PHONY : tools/cli/CMakeFiles/run.dir/all
 
 # Build rule for subdir invocation for target.
 tools/cli/CMakeFiles/run.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tools/cli/CMakeFiles/run.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build/CMakeFiles 0
 .PHONY : tools/cli/CMakeFiles/run.dir/rule
 
 # Convenience name for target.
@@ -264,7 +264,7 @@ run: tools/cli/CMakeFiles/run.dir/rule
 # codegen rule for target.
 tools/cli/CMakeFiles/run.dir/codegen: tools/cli/CMakeFiles/macmanager.dir/all
 	$(MAKE) $(MAKESILENT) -f tools/cli/CMakeFiles/run.dir/build.make tools/cli/CMakeFiles/run.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/finnmcmillion/Desktop/PORTFOLIO/DesktopAssist/build/CMakeFiles --progress-num= "Finished codegen for target run"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build/CMakeFiles --progress-num= "Finished codegen for target run"
 .PHONY : tools/cli/CMakeFiles/run.dir/codegen
 
 # clean rule for target.
