@@ -42,7 +42,7 @@ public:
     void insert_file(const DbFile& f){
         exec(
         "INSERT OR REPLACE INTO files "
-        "(path, filename, extension, size, content_hash, last_accessed) VALUES ("
+        "(path, filename, extension, size, content_hash, last_modified) VALUES ("
         "'" + f.filepath + "', "
         "'" + f.filename + "', "
         "'" + f.extension + "', "

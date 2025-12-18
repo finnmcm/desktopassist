@@ -3,65 +3,50 @@
 #include <iostream>
 #include <thread>
 
-namespace fs = std::filesystem;
 
 
 namespace macmanager {
-    FileManager::FileManager(){
-        root = std::getenv("HOME");
-    }
-    bool refresh_db_files(const std::vector<std::string>& locations, const std::set<std::string>& fileTypes, int numWorkers, Database& db){
-        std::vector<std::thread> threads;
-        //work queue for storing directories
-        std::deque<fs::path> workQueue;
-        //depends on # root directories -> caller handled
-        DbWriteQueue dbWriteQueue;
-        threads.reserve(numWorkers);
-        std::mutex m;
+    namespace fs = std::filesystem;
+    inline int64_t filetime_to_unix_seconds(std::filesystem::file_time_type ftime) {
+        using namespace std::chrono;
 
-        //dedicated writer thread:
-        std::thread writer(db_worker, std::ref(dbWriteQueue), std::ref(db));
-        for(int i = 0; i < numWorkers; i++){
-            threads.emplace_back(file_worker, i, std::ref(workQueue), std::ref(m), std::ref(dbWriteQueue), std::ref(db));
-        }
-        
-        for(std::thread& t : threads){
-            if(t.joinable())
-                t.join();
-        }
-        writer.join();
-    }
-    bool FileManager::find(const std::string& filename, fs::path& filepath){
-        //DESKTOP
-        fs::path desktop = root / "Desktop";
-        if(!fs::exists(desktop) || !fs::is_directory(desktop)){
-            return false;
-        }
-        std::error_code ec;
-        for(const auto& dirEntry : fs::recursive_directory_iterator
-                                                            (desktop, 
-                                                            fs::directory_options::skip_permission_denied, 
-                                                            ec)){
-            if(dirEntry.path().stem() == filename){
-                filepath = dirEntry.path();
-                std::cout << "true" << std::endl;
-                return true;
-            }
-        }
+        // Convert file clock -> system_clock by “bridging” via now()
+        auto sctp = time_point_cast<system_clock::duration>(
+            ftime - std::filesystem::file_time_type::clock::now() + system_clock::now()
+        );
 
-        fs::path downloads = root / "Downloads";
-        fs::path documents = root / "Documents";
-        return false;
+        return static_cast<int64_t>(system_clock::to_time_t(sctp));
     }
-    //WORKS FOR refresh_db_files
-    void file_worker(int id, std::deque<fs::path>& workQueue, std::mutex& work_mutex, DbWriteQueue& dbWriteQueue, Database& db){
+
+    std::mutex print_mutex;
+    void ts_print(const std::string& msg) {
+        std::lock_guard<std::mutex> lock(print_mutex);
+        std::cout << msg << std::endl;
+    }
+    /*
+    TIMER for thread timing:
+    refesh_db_files: 2 threads optimal
+    struct Timer {
+        using clock = std::chrono::steady_clock;
+        std::string label;
+        clock::time_point start;
+        Timer(std::string lbl) : label(std::move(lbl)), start(clock::now()) {}
+        ~Timer() {
+            auto end = clock::now();
+            auto ms = std::chrono::duration_cast<std::chrono::milliseconds>(end - start).count();
+            std::cerr << label << ": " << ms << " ms\n";
+        }
+    };
+    */
+        //WORKS FOR refresh_db_files
+    void file_worker(int id, std::deque<fs::path>& workQueue, std::mutex& work_mutex, DbWriteQueue& dbWriteQueue, const std::set<std::string>& fileTypes){
         while(true){
             //LOCK GUARD - define an inner scope, workQueue immediately unlocks when mutex goes out of scope 
             //prevents early exits / exceptions crashing the program
             fs::path curDir;
             {
                 std::lock_guard<std::mutex> lock(work_mutex);
-                if(workQueue.empty()) return;
+                if(workQueue.empty()) break;
                 curDir = workQueue.front();
                 workQueue.pop_front();
             }
@@ -73,8 +58,8 @@ namespace macmanager {
                         std::lock_guard<std::mutex> lock(work_mutex);
                         workQueue.push_back(fp);
                 }
-                else{
-                    int64_t lastModified = filetime_to_unix_seconds(dirEntry.last_write_time());
+                else if(dirEntry.is_regular_file() && !ec && fileTypes.count(fp.extension().string()) > 0){
+                    int64_t lastModified = macmanager::filetime_to_unix_seconds(dirEntry.last_write_time());
                     DbFile obj{fp.string(), fp.stem().string(), fp.extension().string(), lastModified, dirEntry.file_size()};
                     {
                         std::lock_guard<std::mutex> lock(dbWriteQueue.write_mutex);
@@ -92,7 +77,7 @@ namespace macmanager {
         dbWriteQueue.cv.notify_one();
 
     }
-    void db_worker(int id, DbWriteQueue& dbWriteQueue, Database& db){
+    void db_worker(DbWriteQueue& dbWriteQueue, Database& db){
         //unique lock gives more control than lock guard, allows the cv to control it
         std::unique_lock<std::mutex> lock(dbWriteQueue.write_mutex);
 
@@ -121,16 +106,60 @@ namespace macmanager {
         //flush commit here maybe?
 
     }
+    FileManager::FileManager(){
+        root = std::getenv("HOME");
+    }
+    bool FileManager::refresh_db_files(const std::vector<fs::path>& locations, const std::set<std::string>& fileTypes, int numWorkers, Database& db){
+        std::vector<std::thread> threads;
+        //work queue for storing directories
+        std::deque<fs::path> workQueue;
+        //depends on # root directories -> caller handled
+        DbWriteQueue dbWriteQueue;
+        dbWriteQueue.workers_running.store(numWorkers, std::memory_order_release);
+        threads.reserve(numWorkers);
+        std::mutex m;
 
-inline int64_t filetime_to_unix_seconds(std::filesystem::file_time_type ftime) {
-    using namespace std::chrono;
+        //dedicated writer thread:
+        std::cout << "start of refresh db" << std::endl;
+      //  Timer t("scan+process");
+        std::thread writer(db_worker, std::ref(dbWriteQueue), std::ref(db));
+        ts_print("created db worker");
+        //insert root directories into workQueue:
+        for(const auto& p : locations){
+            workQueue.push_back(p);
+        }
+        for(int i = 0; i < numWorkers; i++){
+            threads.emplace_back(file_worker, i, std::ref(workQueue), std::ref(m), std::ref(dbWriteQueue), std::ref(fileTypes));
+        }
+        ts_print("files running");
+        for(std::thread& t : threads){
+            if(t.joinable())
+                t.join();
+        }
+        writer.join();
+        return true;
+    }
+    bool FileManager::find(const std::string& filename, fs::path& filepath){
+        //DESKTOP
+        fs::path desktop = root / "Desktop";
+        if(!fs::exists(desktop) || !fs::is_directory(desktop)){
+            return false;
+        }
+        std::error_code ec;
+        for(const auto& dirEntry : fs::recursive_directory_iterator
+                                                            (desktop, 
+                                                            fs::directory_options::skip_permission_denied, 
+                                                            ec)){
+            if(dirEntry.path().stem() == filename){
+                filepath = dirEntry.path();
+                std::cout << "true" << std::endl;
+                return true;
+            }
+        }
 
-    // Convert file clock -> system_clock by “bridging” via now()
-    auto sctp = time_point_cast<system_clock::duration>(
-        ftime - std::filesystem::file_time_type::clock::now() + system_clock::now()
-    );
-
-    return static_cast<int64_t>(system_clock::to_time_t(sctp));
-}
+        fs::path downloads = root / "Downloads";
+        fs::path documents = root / "Documents";
+        return false;
+    }
 
 }

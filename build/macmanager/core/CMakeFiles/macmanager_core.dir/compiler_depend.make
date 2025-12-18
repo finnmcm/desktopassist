@@ -913,9 +913,9 @@ macmanager/core/CMakeFiles/macmanager_core.dir/src/app.cpp.o: /Users/finnmcmilli
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/xlocale/_time.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/xlocale/_wchar.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/xlocale/_wctype.h \
+  /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/macmanager/core/src/database.cpp \
   /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/macmanager/core/include/file_manager.h \
-  /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/macmanager/core/include/run_app.h \
-  /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/macmanager/core/src/database.cpp
+  /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/macmanager/core/include/run_app.h
 
 macmanager/core/CMakeFiles/macmanager_core.dir/src/database.cpp.o: /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/macmanager/core/src/database.cpp \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include/__stdarg___gnuc_va_list.h \
@@ -2697,8 +2697,8 @@ macmanager/core/CMakeFiles/macmanager_core.dir/src/file_manager.cpp.o: /Users/fi
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/xlocale/_time.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/xlocale/_wchar.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/xlocale/_wctype.h \
-  /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/macmanager/core/include/file_manager.h \
-  /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/macmanager/core/src/database.cpp
+  /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/macmanager/core/src/database.cpp \
+  /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/macmanager/core/include/file_manager.h
 
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__thread/this_thread.h:
