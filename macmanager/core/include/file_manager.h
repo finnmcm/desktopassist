@@ -5,11 +5,13 @@
 #include <set>
 #include <deque>
 #include <mutex>
+#include "src/database.cpp"
 namespace macmanager {
+
 
     struct DbWriteQueue {
         std::mutex write_mutex;
-        std::deque<std::string> writeQueue;
+        std::deque<DbFile> writeQueue;
         std::atomic<int> workers_running{0};
         std::condition_variable cv;
     };

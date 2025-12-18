@@ -5,6 +5,14 @@
 #include <iostream>
 
 namespace macmanager {
+struct DbFile {
+        std::string filepath;
+        std::string filename;
+        std::string extension;
+        int64_t last_modified;
+        size_t filesize;
+    };
+
 class Database {
 public:
     explicit Database(const std::string& path) {
@@ -30,6 +38,19 @@ public:
             sqlite3_free(err);
             throw std::runtime_error(msg);
         }
+    }
+    void insert_file(const DbFile& f){
+        exec(
+        "INSERT OR REPLACE INTO files "
+        "(path, filename, extension, size, content_hash, last_accessed) VALUES ("
+        "'" + f.filepath + "', "
+        "'" + f.filename + "', "
+        "'" + f.extension + "', "
+        + std::to_string(f.filesize) + ", "
+        "'" + "null" + "', "
+        + std::to_string(f.last_modified) +
+        ");"
+    );
     }
     std::vector<std::pair<std::string, std::string>> listObjects(){
     // Exclude internal sqlite_* tables unless you want them.

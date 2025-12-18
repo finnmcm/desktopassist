@@ -1,7 +1,6 @@
 #include "file_manager.h"
 #include <cstdlib>
 #include <iostream>
-#include "database.cpp"
 #include <thread>
 
 namespace fs = std::filesystem;
@@ -19,6 +18,9 @@ namespace macmanager {
         DbWriteQueue dbWriteQueue;
         threads.reserve(numWorkers);
         std::mutex m;
+
+        //dedicated writer thread:
+        std::thread writer(db_worker, std::ref(dbWriteQueue), std::ref(db));
         for(int i = 0; i < numWorkers; i++){
             threads.emplace_back(file_worker, i, std::ref(workQueue), std::ref(m), std::ref(dbWriteQueue), std::ref(db));
         }
@@ -27,6 +29,7 @@ namespace macmanager {
             if(t.joinable())
                 t.join();
         }
+        writer.join();
     }
     bool FileManager::find(const std::string& filename, fs::path& filepath){
         //DESKTOP
@@ -52,12 +55,12 @@ namespace macmanager {
     }
     //WORKS FOR refresh_db_files
     void file_worker(int id, std::deque<fs::path>& workQueue, std::mutex& work_mutex, DbWriteQueue& dbWriteQueue, Database& db){
-        for(;;){
+        while(true){
             //LOCK GUARD - define an inner scope, workQueue immediately unlocks when mutex goes out of scope 
             //prevents early exits / exceptions crashing the program
             fs::path curDir;
             {
-                std::lock_guard<std::mutex> lock(m);
+                std::lock_guard<std::mutex> lock(work_mutex);
                 if(workQueue.empty()) return;
                 curDir = workQueue.front();
                 workQueue.pop_front();
@@ -67,20 +70,67 @@ namespace macmanager {
                 if (ec) break;
                 fs::path fp = dirEntry.path();
                 if(dirEntry.is_directory() && !ec){
-                        std::lock_guard<std::mutex> lock(m);
+                        std::lock_guard<std::mutex> lock(work_mutex);
                         workQueue.push_back(fp);
                 }
                 else{
-                    const std::string filename = fp.stem().string();
-                    const std::string ext = fp.extension().string();
-                    //do something
+                    int64_t lastModified = filetime_to_unix_seconds(dirEntry.last_write_time());
+                    DbFile obj{fp.string(), fp.stem().string(), fp.extension().string(), lastModified, dirEntry.file_size()};
+                    {
+                        std::lock_guard<std::mutex> lock(dbWriteQueue.write_mutex);
+                        dbWriteQueue.writeQueue.push_back(obj);
+                    }
+                    //WAKE THE WRITE THREAD since we just pushed a write obj to the queue
+                    //cv == condition variable db_writer is dependent on
+                    dbWriteQueue.cv.notify_one();
                 }
 
             }
         }
-    }
-    void db_worker(int id, DbWriteQueue& dbWriteQueue, Database& db){
+        //subtract 1 from num running threads
+        dbWriteQueue.workers_running.fetch_sub(1);
+        dbWriteQueue.cv.notify_one();
 
     }
+    void db_worker(int id, DbWriteQueue& dbWriteQueue, Database& db){
+        //unique lock gives more control than lock guard, allows the cv to control it
+        std::unique_lock<std::mutex> lock(dbWriteQueue.write_mutex);
+
+        while(true){
+            //unlock/stop waiting ONLY when the predicate is true (no worker threads or objects on the write queue)
+            //lambda func defines when thread is allowed to proceed
+            //[&] == capture everything by reference
+            //unlock mutex while asleep, lock while awake
+            dbWriteQueue.cv.wait(lock, [&]{
+                return !dbWriteQueue.writeQueue.empty() ||
+                   dbWriteQueue.workers_running.load(std::memory_order_acquire) == 0;
+            });
+            //shutdown condition - no more writes, no more active file exploring
+            if(dbWriteQueue.writeQueue.empty() && dbWriteQueue.workers_running.load(std::memory_order_acquire) == 0){
+                break;
+            }   
+            DbFile curFile = dbWriteQueue.writeQueue.front();
+            dbWriteQueue.writeQueue.pop_front();
+
+            //unlock the write queue while we make the write to the db (that way we can get back to processing files)
+            lock.unlock();
+            db.insert_file(curFile);
+            lock.lock();
+
+        }
+        //flush commit here maybe?
+
+    }
+
+inline int64_t filetime_to_unix_seconds(std::filesystem::file_time_type ftime) {
+    using namespace std::chrono;
+
+    // Convert file clock -> system_clock by “bridging” via now()
+    auto sctp = time_point_cast<system_clock::duration>(
+        ftime - std::filesystem::file_time_type::clock::now() + system_clock::now()
+    );
+
+    return static_cast<int64_t>(system_clock::to_time_t(sctp));
+}
 
 }
