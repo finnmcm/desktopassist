@@ -2,6 +2,7 @@
 #include <cstdlib>
 #include <iostream>
 #include <thread>
+#include <unistd.h>
 
 
 
@@ -160,6 +161,30 @@ namespace macmanager {
         fs::path downloads = root / "Downloads";
         fs::path documents = root / "Documents";
         return false;
+    }
+    bool FileManager::stage_files(const std::vector<fs::path>& files){
+        fs::path stageDir = fs::temp_directory_path() / "MacAssist-" / std::to_string(getpid());
+        fs::create_directories(stageDir);
+        //create symlinks for files
+        for(auto& f : files){
+            fs::path symPath = stageDir / f.filename();
+            int n = 1;
+            while(fs::exists(symPath)){
+                symPath = stageDir / (f.stem().string() + "-" + std::to_string(n) + f.extension().string());
+                n++;
+            }
+            try {
+                fs::create_symlink(fs::absolute(f), symPath);
+                std::cout << "symlink created between " << fs::absolute(f).string() << " and " << symPath.string() << std::endl;
+            } catch(const fs::filesystem_error& e){
+                std::cerr << e.what() << std::endl;
+            }
+        }
+        //open staging folder
+        std::string cmd = "open \"" + stageDir.string() + "\"";
+        int rc = std::system(cmd.c_str());
+        (void)rc;
+        //FIND A WAY TO CLEAN THIS
     }
 
 }

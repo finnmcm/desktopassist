@@ -30,5 +30,3 @@ DB stored at:
 sqlite3 "$HOME/Library/Application Support/MacAssistant/state.db"
 
 
-
-
