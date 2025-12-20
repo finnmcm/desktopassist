@@ -34,7 +34,7 @@ void mm_destroy(mm_handle_t* h);
 
 
 void mm_refresh_db_files(mm_handle_t* h, mm_status_t* status, char** locations, int numLocations, char** fileTypes, int numFileTypes, int numWorkers);
-//void mm_stage_files(mm_handle)
+void mm_stage_files(mm_handle_t* h, mm_status_t* status);
 
 // Error helpers / memory management
 // Any char* returned through out params must be freed with mm_free().

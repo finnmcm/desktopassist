@@ -18,7 +18,7 @@ namespace macmanager {
        locs.push_back(root / "Desktop");
        locs.push_back(root / "Downloads");
        locs.push_back(root / "Documents");
-       fm.refresh_db_files(locs, types, 2, db);
+     // fm.refresh_db_files(locs, types, 2, db);
     }
     void stage_files(){
         std::vector<std::filesystem::path> files;
@@ -33,7 +33,7 @@ namespace macmanager {
         fm.stage_files(files);
 
     }
-    
+
     int run_app(int argc, char** argv) {
         if(argc < 3){
             std::cout << "invalid # params";

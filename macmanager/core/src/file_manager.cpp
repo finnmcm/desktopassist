@@ -110,7 +110,7 @@ namespace macmanager {
     FileManager::FileManager(){
         root = std::getenv("HOME");
     }
-    bool FileManager::refresh_db_files(const std::vector<fs::path>& locations, const std::set<std::string>& fileTypes, int numWorkers, Database& db){
+    bool FileManager::refresh_db_files(const std::vector<std::string>& locationStrs, const std::set<std::string>& fileTypes, int numWorkers, Database& db){
         std::vector<std::thread> threads;
         //work queue for storing directories
         std::deque<fs::path> workQueue;
@@ -119,6 +119,12 @@ namespace macmanager {
         dbWriteQueue.workers_running.store(numWorkers, std::memory_order_release);
         threads.reserve(numWorkers);
         std::mutex m;
+        
+        std::vector<fs::path> locations;
+        locations.resize(locationStrs.size());
+        for(int i = 0; i < locations.size(); i++){
+            locations[i] = this->string_to_path(locationStrs[i]);
+        }
 
         //dedicated writer thread:
         std::cout << "start of refresh db" << std::endl;
@@ -185,6 +191,9 @@ namespace macmanager {
         int rc = std::system(cmd.c_str());
         (void)rc;
         //FIND A WAY TO CLEAN THIS
+    }
+    fs::path FileManager::string_to_path(const std::string& str){
+        return root / str;
     }
 
 }

@@ -915,8 +915,7 @@ macmanager/bridge/CMakeFiles/macmanager_bridge.dir/src/macmanager_bridge.cpp.o: 
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/xlocale/_wctype.h \
   /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/macmanager/bridge/include/macmanager_bridge.h \
   /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/macmanager/core/src/database.cpp \
-  /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/macmanager/core/include/file_manager.h \
-  /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/macmanager/core/src/database.cpp
+  /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/macmanager/core/include/file_manager.h
 
 
 /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/macmanager/bridge/include/macmanager_bridge.h:

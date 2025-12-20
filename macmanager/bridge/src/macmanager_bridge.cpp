@@ -34,37 +34,49 @@ mm_handle_t* mm_create(mm_status* status){
 void mm_refresh_db_files(mm_handle_t* h, mm_status_t* status, char** locations, int numLocations, char** fileTypes, int numFilesTypes, int numWorkers){
     if(status) *status = MM_OK;
     //convert a bunch of char**'s to their actual cpp objects that fm expects
-    if(numFilesTypes <= 0 || numLocations <= 0){
-        if(status){ *status == MM_ERR_INVALID_ARG;}
+    if(numFilesTypes <= 0 || numLocations <= 0 || !h || numWorkers == 0){
+        if(status){ *status = MM_ERR_INVALID_ARG;}
         return;
     }
-    std::vector<std::filesystem::path> fs_locations;
+    std::vector<std::string> fs_locations;
     fs_locations.resize(numLocations);
     std::set<std::string> fs_fileTypes;
     try {
         for(int i = 0; i < numLocations; i++){
             if(!locations[i]){ 
-                if(status){ *status = MM_ERR_INVALID_ARG; } 
+                if(status) *status = MM_ERR_INVALID_ARG; 
                 return;
             }
             std::string curLocation(locations[i]);
-            fs_locations[i] = curLocation;
         }
         for(int i = 0; i < numFilesTypes; i++){
             if(!fileTypes[i]){ 
-                if(status){ *status = MM_ERR_INVALID_ARG; } 
+                if(status) *status = MM_ERR_INVALID_ARG; 
                 return;
             }
             std::string fileType(fileTypes[i]);
             fs_fileTypes.insert(fileType);
-            fileTypes++;
         }
             
         h->fm.refresh_db_files(fs_locations, fs_fileTypes, numWorkers, h->db);
     }
-    catch(...){
-        
+    catch(std::bad_alloc&){
+        if(status) *status = MM_ERR_OOM;
+        return;
     }
+    catch(std::filesystem::filesystem_error&){
+        if(status) *status = MM_ERR_FS;
+        return;
+    }
+    catch(std::exception&){
+        if(status) *status = MM_ERR_INTERNAL;
+        return;
+    }
+    catch(...){
+        if(status) *status = MM_ERR_UNKNOWN;
+        return;
+    }
+        
 }
 void mm_destroy(mm_handle_t* h){
     delete h;
