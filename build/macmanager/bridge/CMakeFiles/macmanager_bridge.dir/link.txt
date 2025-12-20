@@ -1,2 +1,2 @@
-/usr/bin/ar qc ../../Debug/lib/libmacmanager_bridge.a CMakeFiles/macmanager_bridge.dir/src/MacBridge.cpp.o
+/usr/bin/ar qc ../../Debug/lib/libmacmanager_bridge.a CMakeFiles/macmanager_bridge.dir/src/macmanager_bridge.cpp.o
 /usr/bin/ranlib ../../Debug/lib/libmacmanager_bridge.a

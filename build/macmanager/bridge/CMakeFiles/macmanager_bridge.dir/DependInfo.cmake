@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/macmanager/bridge/src/MacBridge.cpp" "macmanager/bridge/CMakeFiles/macmanager_bridge.dir/src/MacBridge.cpp.o" "gcc" "macmanager/bridge/CMakeFiles/macmanager_bridge.dir/src/MacBridge.cpp.o.d"
+  "/Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/macmanager/bridge/src/macmanager_bridge.cpp" "macmanager/bridge/CMakeFiles/macmanager_bridge.dir/src/macmanager_bridge.cpp.o" "gcc" "macmanager/bridge/CMakeFiles/macmanager_bridge.dir/src/macmanager_bridge.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

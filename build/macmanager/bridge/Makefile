@@ -130,29 +130,29 @@ macmanager_bridge/fast:
 	cd /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build && $(MAKE) $(MAKESILENT) -f macmanager/bridge/CMakeFiles/macmanager_bridge.dir/build.make macmanager/bridge/CMakeFiles/macmanager_bridge.dir/build
 .PHONY : macmanager_bridge/fast
 
-src/MacBridge.o: src/MacBridge.cpp.o
-.PHONY : src/MacBridge.o
+src/macmanager_bridge.o: src/macmanager_bridge.cpp.o
+.PHONY : src/macmanager_bridge.o
 
 # target to build an object file
-src/MacBridge.cpp.o:
-	cd /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build && $(MAKE) $(MAKESILENT) -f macmanager/bridge/CMakeFiles/macmanager_bridge.dir/build.make macmanager/bridge/CMakeFiles/macmanager_bridge.dir/src/MacBridge.cpp.o
-.PHONY : src/MacBridge.cpp.o
+src/macmanager_bridge.cpp.o:
+	cd /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build && $(MAKE) $(MAKESILENT) -f macmanager/bridge/CMakeFiles/macmanager_bridge.dir/build.make macmanager/bridge/CMakeFiles/macmanager_bridge.dir/src/macmanager_bridge.cpp.o
+.PHONY : src/macmanager_bridge.cpp.o
 
-src/MacBridge.i: src/MacBridge.cpp.i
-.PHONY : src/MacBridge.i
+src/macmanager_bridge.i: src/macmanager_bridge.cpp.i
+.PHONY : src/macmanager_bridge.i
 
 # target to preprocess a source file
-src/MacBridge.cpp.i:
-	cd /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build && $(MAKE) $(MAKESILENT) -f macmanager/bridge/CMakeFiles/macmanager_bridge.dir/build.make macmanager/bridge/CMakeFiles/macmanager_bridge.dir/src/MacBridge.cpp.i
-.PHONY : src/MacBridge.cpp.i
+src/macmanager_bridge.cpp.i:
+	cd /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build && $(MAKE) $(MAKESILENT) -f macmanager/bridge/CMakeFiles/macmanager_bridge.dir/build.make macmanager/bridge/CMakeFiles/macmanager_bridge.dir/src/macmanager_bridge.cpp.i
+.PHONY : src/macmanager_bridge.cpp.i
 
-src/MacBridge.s: src/MacBridge.cpp.s
-.PHONY : src/MacBridge.s
+src/macmanager_bridge.s: src/macmanager_bridge.cpp.s
+.PHONY : src/macmanager_bridge.s
 
 # target to generate assembly for a file
-src/MacBridge.cpp.s:
-	cd /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build && $(MAKE) $(MAKESILENT) -f macmanager/bridge/CMakeFiles/macmanager_bridge.dir/build.make macmanager/bridge/CMakeFiles/macmanager_bridge.dir/src/MacBridge.cpp.s
-.PHONY : src/MacBridge.cpp.s
+src/macmanager_bridge.cpp.s:
+	cd /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build && $(MAKE) $(MAKESILENT) -f macmanager/bridge/CMakeFiles/macmanager_bridge.dir/build.make macmanager/bridge/CMakeFiles/macmanager_bridge.dir/src/macmanager_bridge.cpp.s
+.PHONY : src/macmanager_bridge.cpp.s
 
 # Help Target
 help:
@@ -163,9 +163,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... macmanager_bridge"
-	@echo "... src/MacBridge.o"
-	@echo "... src/MacBridge.i"
-	@echo "... src/MacBridge.s"
+	@echo "... src/macmanager_bridge.o"
+	@echo "... src/macmanager_bridge.i"
+	@echo "... src/macmanager_bridge.s"
 .PHONY : help
 
 

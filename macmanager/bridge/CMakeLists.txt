@@ -1,7 +1,5 @@
 add_library(macmanager_bridge ${_MM_LIB_TYPE}
-  src/MacBridge.cpp
-  # If you switch to ObjC++ later, you can use:
-  # src/MacManagerBridge.mm
+  src/macmanager_bridge.cpp
 )
 
 target_include_directories(macmanager_bridge

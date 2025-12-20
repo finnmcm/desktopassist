@@ -72,28 +72,28 @@ include macmanager/bridge/CMakeFiles/macmanager_bridge.dir/flags.make
 macmanager/bridge/CMakeFiles/macmanager_bridge.dir/codegen:
 .PHONY : macmanager/bridge/CMakeFiles/macmanager_bridge.dir/codegen
 
-macmanager/bridge/CMakeFiles/macmanager_bridge.dir/src/MacBridge.cpp.o: macmanager/bridge/CMakeFiles/macmanager_bridge.dir/flags.make
-macmanager/bridge/CMakeFiles/macmanager_bridge.dir/src/MacBridge.cpp.o: /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/macmanager/bridge/src/MacBridge.cpp
-macmanager/bridge/CMakeFiles/macmanager_bridge.dir/src/MacBridge.cpp.o: macmanager/bridge/CMakeFiles/macmanager_bridge.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object macmanager/bridge/CMakeFiles/macmanager_bridge.dir/src/MacBridge.cpp.o"
-	cd /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build/macmanager/bridge && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT macmanager/bridge/CMakeFiles/macmanager_bridge.dir/src/MacBridge.cpp.o -MF CMakeFiles/macmanager_bridge.dir/src/MacBridge.cpp.o.d -o CMakeFiles/macmanager_bridge.dir/src/MacBridge.cpp.o -c /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/macmanager/bridge/src/MacBridge.cpp
+macmanager/bridge/CMakeFiles/macmanager_bridge.dir/src/macmanager_bridge.cpp.o: macmanager/bridge/CMakeFiles/macmanager_bridge.dir/flags.make
+macmanager/bridge/CMakeFiles/macmanager_bridge.dir/src/macmanager_bridge.cpp.o: /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/macmanager/bridge/src/macmanager_bridge.cpp
+macmanager/bridge/CMakeFiles/macmanager_bridge.dir/src/macmanager_bridge.cpp.o: macmanager/bridge/CMakeFiles/macmanager_bridge.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object macmanager/bridge/CMakeFiles/macmanager_bridge.dir/src/macmanager_bridge.cpp.o"
+	cd /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build/macmanager/bridge && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT macmanager/bridge/CMakeFiles/macmanager_bridge.dir/src/macmanager_bridge.cpp.o -MF CMakeFiles/macmanager_bridge.dir/src/macmanager_bridge.cpp.o.d -o CMakeFiles/macmanager_bridge.dir/src/macmanager_bridge.cpp.o -c /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/macmanager/bridge/src/macmanager_bridge.cpp
 
-macmanager/bridge/CMakeFiles/macmanager_bridge.dir/src/MacBridge.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/macmanager_bridge.dir/src/MacBridge.cpp.i"
-	cd /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build/macmanager/bridge && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/macmanager/bridge/src/MacBridge.cpp > CMakeFiles/macmanager_bridge.dir/src/MacBridge.cpp.i
+macmanager/bridge/CMakeFiles/macmanager_bridge.dir/src/macmanager_bridge.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/macmanager_bridge.dir/src/macmanager_bridge.cpp.i"
+	cd /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build/macmanager/bridge && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/macmanager/bridge/src/macmanager_bridge.cpp > CMakeFiles/macmanager_bridge.dir/src/macmanager_bridge.cpp.i
 
-macmanager/bridge/CMakeFiles/macmanager_bridge.dir/src/MacBridge.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/macmanager_bridge.dir/src/MacBridge.cpp.s"
-	cd /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build/macmanager/bridge && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/macmanager/bridge/src/MacBridge.cpp -o CMakeFiles/macmanager_bridge.dir/src/MacBridge.cpp.s
+macmanager/bridge/CMakeFiles/macmanager_bridge.dir/src/macmanager_bridge.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/macmanager_bridge.dir/src/macmanager_bridge.cpp.s"
+	cd /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build/macmanager/bridge && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/macmanager/bridge/src/macmanager_bridge.cpp -o CMakeFiles/macmanager_bridge.dir/src/macmanager_bridge.cpp.s
 
 # Object files for target macmanager_bridge
 macmanager_bridge_OBJECTS = \
-"CMakeFiles/macmanager_bridge.dir/src/MacBridge.cpp.o"
+"CMakeFiles/macmanager_bridge.dir/src/macmanager_bridge.cpp.o"
 
 # External object files for target macmanager_bridge
 macmanager_bridge_EXTERNAL_OBJECTS =
 
-Debug/lib/libmacmanager_bridge.a: macmanager/bridge/CMakeFiles/macmanager_bridge.dir/src/MacBridge.cpp.o
+Debug/lib/libmacmanager_bridge.a: macmanager/bridge/CMakeFiles/macmanager_bridge.dir/src/macmanager_bridge.cpp.o
 Debug/lib/libmacmanager_bridge.a: macmanager/bridge/CMakeFiles/macmanager_bridge.dir/build.make
 Debug/lib/libmacmanager_bridge.a: macmanager/bridge/CMakeFiles/macmanager_bridge.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library ../../Debug/lib/libmacmanager_bridge.a"

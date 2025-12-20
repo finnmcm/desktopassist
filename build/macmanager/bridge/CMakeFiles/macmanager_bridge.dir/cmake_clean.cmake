@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "../../Debug/lib/libmacmanager_bridge.a"
   "../../Debug/lib/libmacmanager_bridge.pdb"
-  "CMakeFiles/macmanager_bridge.dir/src/MacBridge.cpp.o"
-  "CMakeFiles/macmanager_bridge.dir/src/MacBridge.cpp.o.d"
+  "CMakeFiles/macmanager_bridge.dir/src/macmanager_bridge.cpp.o"
+  "CMakeFiles/macmanager_bridge.dir/src/macmanager_bridge.cpp.o.d"
 )
 
 # Per-language clean rules from dependency scanning.
