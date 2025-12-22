@@ -44,6 +44,7 @@ macmanager/bridge/CMakeFiles/macmanager_bridge.dir/src/macmanager_bridge.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/_wctype.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/_xlocale.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/alloca.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/assert.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/adjacent_find.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/all_of.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/any_of.h
@@ -421,6 +422,7 @@ macmanager/bridge/CMakeFiles/macmanager_bridge.dir/src/macmanager_bridge.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__fwd/memory_resource.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__fwd/ostream.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__fwd/pair.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__fwd/span.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__fwd/sstream.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__fwd/streambuf.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__fwd/string.h
@@ -452,6 +454,7 @@ macmanager/bridge/CMakeFiles/macmanager_bridge.dir/src/macmanager_bridge.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/iter_swap.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/iterator.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/iterator_traits.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/iterator_with_data.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/mergeable.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/move_iterator.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/move_sentinel.h
@@ -508,25 +511,67 @@ macmanager/bridge/CMakeFiles/macmanager_bridge.dir/src/macmanager_bridge.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__mutex/tag_types.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__mutex/unique_lock.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__node_handle
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__numeric/accumulate.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__numeric/adjacent_difference.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__numeric/exclusive_scan.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__numeric/gcd_lcm.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__numeric/inclusive_scan.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__numeric/inner_product.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__numeric/iota.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__numeric/midpoint.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__numeric/partial_sum.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__numeric/pstl_reduce.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__numeric/pstl_transform_reduce.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__numeric/reduce.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__numeric/transform_exclusive_scan.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__numeric/transform_inclusive_scan.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__numeric/transform_reduce.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__random/is_valid.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__random/log2.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__random/uniform_int_distribution.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__random/uniform_random_bit_generator.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/access.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/all.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/as_rvalue_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/common_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/concepts.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/container_compatible_range.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/counted.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/dangling.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/data.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/drop_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/drop_while_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/elements_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/empty.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/empty_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/enable_borrowed_range.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/enable_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/filter_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/from_range.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/iota_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/istream_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/join_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/lazy_split_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/movable_box.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/non_propagating_cache.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/owning_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/range_adaptor.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/rbegin.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/ref_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/rend.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/repeat_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/reverse_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/single_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/size.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/split_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/subrange.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/take_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/take_while_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/to.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/transform_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/view_interface.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/views.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/zip_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__split_buffer
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__std_mbstate_t.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__string/char_traits.h
@@ -713,10 +758,12 @@ macmanager/bridge/CMakeFiles/macmanager_bridge.dir/src/macmanager_bridge.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__variant/monostate.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__verbose_abort
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/algorithm
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/any
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/array
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/atomic
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/bit
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/bitset
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/cassert
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/cctype
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/cerrno
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/climits
@@ -739,6 +786,7 @@ macmanager/bridge/CMakeFiles/macmanager_bridge.dir/src/macmanager_bridge.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/exception
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/execution
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/filesystem
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/forward_list
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/functional
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/initializer_list
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/iomanip
@@ -751,14 +799,18 @@ macmanager/bridge/CMakeFiles/macmanager_bridge.dir/src/macmanager_bridge.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/limits.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/locale
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/locale.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/map
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/math.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/memory
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/mutex
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/new
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/numeric
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/optional
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/ostream
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/ranges
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/ratio
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/set
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/span
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/stddef.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/stdexcept
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/stdint.h
@@ -774,6 +826,7 @@ macmanager/bridge/CMakeFiles/macmanager_bridge.dir/src/macmanager_bridge.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/typeinfo
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/unordered_map
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/utility
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/valarray
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/variant
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/vector
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/version
@@ -917,4 +970,50 @@ macmanager/bridge/CMakeFiles/macmanager_bridge.dir/src/macmanager_bridge.cpp.o
  /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/macmanager/bridge/include/macmanager_bridge.h
  /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/macmanager/core/src/database.cpp
  /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/macmanager/core/include/file_manager.h
+ /usr/local/include/nlohmann/adl_serializer.hpp
+ /usr/local/include/nlohmann/byte_container_with_subtype.hpp
+ /usr/local/include/nlohmann/detail/abi_macros.hpp
+ /usr/local/include/nlohmann/detail/conversions/from_json.hpp
+ /usr/local/include/nlohmann/detail/conversions/to_chars.hpp
+ /usr/local/include/nlohmann/detail/conversions/to_json.hpp
+ /usr/local/include/nlohmann/detail/exceptions.hpp
+ /usr/local/include/nlohmann/detail/hash.hpp
+ /usr/local/include/nlohmann/detail/input/binary_reader.hpp
+ /usr/local/include/nlohmann/detail/input/input_adapters.hpp
+ /usr/local/include/nlohmann/detail/input/json_sax.hpp
+ /usr/local/include/nlohmann/detail/input/lexer.hpp
+ /usr/local/include/nlohmann/detail/input/parser.hpp
+ /usr/local/include/nlohmann/detail/input/position_t.hpp
+ /usr/local/include/nlohmann/detail/iterators/internal_iterator.hpp
+ /usr/local/include/nlohmann/detail/iterators/iter_impl.hpp
+ /usr/local/include/nlohmann/detail/iterators/iteration_proxy.hpp
+ /usr/local/include/nlohmann/detail/iterators/iterator_traits.hpp
+ /usr/local/include/nlohmann/detail/iterators/json_reverse_iterator.hpp
+ /usr/local/include/nlohmann/detail/iterators/primitive_iterator.hpp
+ /usr/local/include/nlohmann/detail/json_custom_base_class.hpp
+ /usr/local/include/nlohmann/detail/json_pointer.hpp
+ /usr/local/include/nlohmann/detail/json_ref.hpp
+ /usr/local/include/nlohmann/detail/macro_scope.hpp
+ /usr/local/include/nlohmann/detail/macro_unscope.hpp
+ /usr/local/include/nlohmann/detail/meta/call_std/begin.hpp
+ /usr/local/include/nlohmann/detail/meta/call_std/end.hpp
+ /usr/local/include/nlohmann/detail/meta/cpp_future.hpp
+ /usr/local/include/nlohmann/detail/meta/detected.hpp
+ /usr/local/include/nlohmann/detail/meta/identity_tag.hpp
+ /usr/local/include/nlohmann/detail/meta/is_sax.hpp
+ /usr/local/include/nlohmann/detail/meta/std_fs.hpp
+ /usr/local/include/nlohmann/detail/meta/type_traits.hpp
+ /usr/local/include/nlohmann/detail/meta/void_t.hpp
+ /usr/local/include/nlohmann/detail/output/binary_writer.hpp
+ /usr/local/include/nlohmann/detail/output/output_adapters.hpp
+ /usr/local/include/nlohmann/detail/output/serializer.hpp
+ /usr/local/include/nlohmann/detail/string_concat.hpp
+ /usr/local/include/nlohmann/detail/string_escape.hpp
+ /usr/local/include/nlohmann/detail/string_utils.hpp
+ /usr/local/include/nlohmann/detail/value_t.hpp
+ /usr/local/include/nlohmann/json.hpp
+ /usr/local/include/nlohmann/json_fwd.hpp
+ /usr/local/include/nlohmann/ordered_map.hpp
+ /usr/local/include/nlohmann/thirdparty/hedley/hedley.hpp
+ /usr/local/include/nlohmann/thirdparty/hedley/hedley_undef.hpp
 

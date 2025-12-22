@@ -43,10 +43,10 @@ namespace macmanager {
         std::string usage = argv[1];
         std::string args = argv[2];
         
-       // db.printAllTablesAndSchema();
+        db.printAllTablesAndSchema();
        
        //db.listObjects();
-       stage_files();
+    //   stage_files();
         return 0;
     }
 }

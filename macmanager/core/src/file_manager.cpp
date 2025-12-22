@@ -110,7 +110,7 @@ namespace macmanager {
     FileManager::FileManager(){
         root = std::getenv("HOME");
     }
-    bool FileManager::refresh_db_files(const std::vector<std::string>& locationStrs, const std::set<std::string>& fileTypes, int numWorkers, Database& db){
+    void FileManager::refresh_db_files(const std::vector<std::string>& locationStrs, const std::set<std::string>& fileTypes, int numWorkers, Database& db){
         std::vector<std::thread> threads;
         //work queue for storing directories
         std::deque<fs::path> workQueue;
@@ -122,7 +122,7 @@ namespace macmanager {
         
         std::vector<fs::path> locations;
         locations.resize(locationStrs.size());
-        for(int i = 0; i < locations.size(); i++){
+        for(size_t i = 0; i < locations.size(); i++){
             locations[i] = this->string_to_path(locationStrs[i]);
         }
 
@@ -144,7 +144,7 @@ namespace macmanager {
                 t.join();
         }
         writer.join();
-        return true;
+        return;
     }
     bool FileManager::find(const std::string& filename, fs::path& filepath){
         //DESKTOP
@@ -168,7 +168,7 @@ namespace macmanager {
         fs::path documents = root / "Documents";
         return false;
     }
-    bool FileManager::stage_files(const std::vector<fs::path>& files){
+    void FileManager::stage_files(const std::vector<fs::path>& files){
         fs::path stageDir = fs::temp_directory_path() / "MacAssist-" / std::to_string(getpid());
         fs::create_directories(stageDir);
         //create symlinks for files

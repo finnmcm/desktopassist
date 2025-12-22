@@ -2,6 +2,8 @@
 //extern "C" allows for compatibility between the c++ core and our swift frontend 
 #pragma once
 #include <stdint.h>
+#include <stddef.h>
+
 
 #ifdef __cplusplus
 extern "C" {
@@ -24,6 +26,20 @@ typedef enum mm_status {
 
 
 } mm_status_t;
+
+typedef struct mm_get_file_args {
+    char** file_names;
+    char** file_extensions;
+    int64_t modified_within; //checks whether file has been modified within the last modified_within timeframe
+    int64_t modified_after; //checks whether file has been modified after given time
+    size_t num_file_names;
+    size_t num_file_extensions;
+} mm_get_file_args_t;
+
+typedef struct mm_string_array {
+    char** data;
+    size_t size;
+} mm_string_array_t;
 // Define OPAQUE TYPE -> we forward the struct so we can use it in our ABI reference, but we actually define what it is in the cpp
 // implementation
 typedef struct mm_handle mm_handle_t;
@@ -32,9 +48,11 @@ typedef struct mm_handle mm_handle_t;
 mm_handle_t* mm_create(mm_status_t* status);
 void mm_destroy(mm_handle_t* h);
 
-
+void mm_get_file_paths(mm_handle_t* h, mm_status_t* status, mm_get_file_args_t* args, mm_string_array_t* file_paths);
+//TODO: change these to mm_string_arrays
 void mm_refresh_db_files(mm_handle_t* h, mm_status_t* status, char** locations, int numLocations, char** fileTypes, int numFileTypes, int numWorkers);
-void mm_stage_files(mm_handle_t* h, mm_status_t* status);
+//TODO -> change the char** and int to a mm_string_array
+void mm_stage_files(mm_handle_t* h, mm_status_t* status, char** fileList, int numFiles);
 
 // Error helpers / memory management
 // Any char* returned through out params must be freed with mm_free().

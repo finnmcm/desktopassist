@@ -3,6 +3,8 @@
 #include <stdexcept>
 #include <vector>
 #include <iostream>
+#include <nlohmann/json.hpp>
+
 
 namespace macmanager {
 struct DbFile {
@@ -52,6 +54,91 @@ public:
         ");"
     );
     }
+
+    std::vector<DbFile> query_files(const std::vector<std::string>& file_names, const std::vector<std::string>& file_extensions, 
+                                    int64_t modified_within, int64_t modified_after){
+        //SQL QUERY STRUCTURE                             
+        constexpr const char* kQueryFilesSql = R"SQL(
+            SELECT path, filename, extension, size, content_hash, last_modified
+            FROM files
+            WHERE
+                (:num_filenames = 0 OR EXISTS (
+                    SELECT 1
+                    FROM json_each(:filenames)
+                    WHERE files.filename LIKE '%' || value || '%'
+                ))
+            AND
+                (:num_extensions = 0 OR files.extension IN (
+                    SELECT value FROM json_each(:extensions)
+                ))
+            AND
+                (:modified_within IS NULL
+                OR files.last_modified >= (strftime('%s','now') - :modified_within))
+            AND
+                (:modified_after IS NULL
+                OR files.last_modified >= :modified_after)
+            ;
+            )SQL";
+
+        sqlite3_stmt* stmt = nullptr;
+        if (sqlite3_prepare_v2(db, kQueryFilesSql, -1, &stmt, nullptr) != SQLITE_OK) {
+                throw std::runtime_error(sqlite3_errmsg(db));
+        }
+
+        auto finalize = [&]() {
+            if (stmt) sqlite3_finalize(stmt);
+            stmt = nullptr;
+        };
+        try {
+            //bind our parameters to the query
+            const std::string filename_json = to_json_array(file_names);
+            const std::string file_ext_json = to_json_array(file_extensions);
+            bind_text(stmt, ":filenames", filename_json);
+            bind_int64(stmt, ":num_filenames", (int64_t)file_names.size());
+
+            bind_text(stmt, ":extensions", file_ext_json);
+            bind_int64(stmt, ":num_extensions", (int64_t)file_extensions.size());
+
+            if(modified_after != -1) bind_int64(stmt, ":modified_after", modified_after);
+            else bind_null(stmt, ":modified_after");
+
+            if(modified_within != -1) bind_int64(stmt, ":modified_within", modified_within);
+            else bind_null(stmt, ":modified_within");
+
+            std::vector<DbFile> files;
+            while(true){
+                const int rc = sqlite3_step(stmt);
+                if (rc == SQLITE_ROW){
+                    DbFile f;
+                    const unsigned char* c0 = sqlite3_column_text(stmt, 0);
+                    const unsigned char* c1 = sqlite3_column_text(stmt, 1);
+                    const unsigned char* c2 = sqlite3_column_text(stmt, 2);
+                //    const unsigned char* c4 = sqlite3_column_text(stmt, 4);
+
+                    f.filepath     = c0 ? reinterpret_cast<const char*>(c0) : "";
+                    f.filename     = c1 ? reinterpret_cast<const char*>(c1) : "";
+                    f.extension    = c2 ? reinterpret_cast<const char*>(c2) : "";
+                    f.filesize     = sqlite3_column_int64(stmt, 3);
+                  //  f.content_hash = c4 ? reinterpret_cast<const char*>(c4) : "";
+                  f.last_modified  = sqlite3_column_int64(stmt, 5);
+
+                  files.push_back(f);
+                }
+                else if (rc == SQLITE_DONE) break;
+                else throw std::runtime_error(sqlite3_errmsg(db));
+            }
+            finalize();
+            return files;
+        }
+        catch(...){
+            finalize();
+            throw;
+        }
+
+
+
+    }
+
     std::vector<std::pair<std::string, std::string>> listObjects(){
     // Exclude internal sqlite_* tables unless you want them.
     const char* sql =
@@ -170,6 +257,42 @@ void printAllTablesAndSchema() {
     sqlite3_close(db);
 }
 
+/*=========
+SQL PARAMETER BUILDERS - use these to bind parameters for non-static queries
+=========*/
+static int bind_index(sqlite3_stmt* stmt, const char* name) {
+    int idx = sqlite3_bind_parameter_index(stmt, name);
+    if (idx == 0) throw std::runtime_error(std::string("Missing bind parameter: ") + name);
+    return idx;
+}
+
+static void bind_text(sqlite3_stmt* stmt, const char* name, const std::string& val) {
+    int idx = bind_index(stmt, name);
+    if (sqlite3_bind_text(stmt, idx, val.c_str(), (int)val.size(), SQLITE_TRANSIENT) != SQLITE_OK) {
+        throw std::runtime_error("sqlite3_bind_text failed");
+    }
+}
+
+static void bind_int64(sqlite3_stmt* stmt, const char* name, int64_t val) {
+    int idx = bind_index(stmt, name);
+    if (sqlite3_bind_int64(stmt, idx, val) != SQLITE_OK) {
+        throw std::runtime_error("sqlite3_bind_int64 failed");
+    }
+}
+
+static void bind_null(sqlite3_stmt* stmt, const char* name) {
+    int idx = bind_index(stmt, name);
+    if (sqlite3_bind_null(stmt, idx) != SQLITE_OK) {
+        throw std::runtime_error("sqlite3_bind_null failed");
+    }
+}
+
+static std::string to_json_array(const std::vector<std::string>& items) {
+    nlohmann::json j = nlohmann::json::array();
+    for (const auto& s : items) j.push_back(s);
+
+    return j.dump();
+}
 private:
     sqlite3* db;
 };

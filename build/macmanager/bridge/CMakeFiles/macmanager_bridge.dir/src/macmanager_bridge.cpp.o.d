@@ -31,6 +31,17 @@ macmanager/bridge/CMakeFiles/macmanager_bridge.dir/src/macmanager_bridge.cpp.o: 
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/_types/_uintptr_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/_types/_intmax_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/_types/_uintmax_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/stddef.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include/stddef.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include/__stddef_header_macro.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include/__stddef_ptrdiff_t.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include/__stddef_size_t.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include/__stddef_rsize_t.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include/__stddef_wchar_t.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include/__stddef_null.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include/__stddef_nullptr_t.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include/__stddef_max_align_t.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include/__stddef_offsetof.h \
   /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/macmanager/bridge/src/../../core/include/file_manager.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/filesystem \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__assert \
@@ -52,17 +63,6 @@ macmanager/bridge/CMakeFiles/macmanager_bridge.dir/src/macmanager_bridge.cpp.o: 
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/remove_const.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/remove_volatile.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/version \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/stddef.h \
-  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include/stddef.h \
-  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include/__stddef_header_macro.h \
-  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include/__stddef_ptrdiff_t.h \
-  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include/__stddef_size_t.h \
-  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include/__stddef_rsize_t.h \
-  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include/__stddef_wchar_t.h \
-  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include/__stddef_null.h \
-  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include/__stddef_nullptr_t.h \
-  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include/__stddef_max_align_t.h \
-  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include/__stddef_offsetof.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__concepts/common_reference_with.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__concepts/convertible_to.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/is_convertible.h \
@@ -913,4 +913,103 @@ macmanager/bridge/CMakeFiles/macmanager_bridge.dir/src/macmanager_bridge.cpp.o: 
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/deque \
   /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/macmanager/bridge/src/../../core/include/../src/database.cpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sqlite3.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/iostream
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/iostream \
+  /usr/local/include/nlohmann/json.hpp \
+  /usr/local/include/nlohmann/adl_serializer.hpp \
+  /usr/local/include/nlohmann/detail/abi_macros.hpp \
+  /usr/local/include/nlohmann/detail/conversions/from_json.hpp \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/forward_list \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/map \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/valarray \
+  /usr/local/include/nlohmann/detail/exceptions.hpp \
+  /usr/local/include/nlohmann/detail/value_t.hpp \
+  /usr/local/include/nlohmann/detail/macro_scope.hpp \
+  /usr/local/include/nlohmann/detail/meta/detected.hpp \
+  /usr/local/include/nlohmann/detail/meta/void_t.hpp \
+  /usr/local/include/nlohmann/thirdparty/hedley/hedley.hpp \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/cassert \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/assert.h \
+  /usr/local/include/nlohmann/detail/string_escape.hpp \
+  /usr/local/include/nlohmann/detail/input/position_t.hpp \
+  /usr/local/include/nlohmann/detail/meta/cpp_future.hpp \
+  /usr/local/include/nlohmann/detail/meta/type_traits.hpp \
+  /usr/local/include/nlohmann/detail/iterators/iterator_traits.hpp \
+  /usr/local/include/nlohmann/detail/meta/call_std/begin.hpp \
+  /usr/local/include/nlohmann/detail/meta/call_std/end.hpp \
+  /usr/local/include/nlohmann/json_fwd.hpp \
+  /usr/local/include/nlohmann/detail/string_concat.hpp \
+  /usr/local/include/nlohmann/detail/meta/identity_tag.hpp \
+  /usr/local/include/nlohmann/detail/meta/std_fs.hpp \
+  /usr/local/include/nlohmann/detail/conversions/to_json.hpp \
+  /usr/local/include/nlohmann/detail/iterators/iteration_proxy.hpp \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/ranges \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/all.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/owning_view.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/range_adaptor.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/ref_view.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/as_rvalue_view.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/common_view.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/counted.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/span \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__fwd/span.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/drop_view.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/empty_view.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/iota_view.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/movable_box.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/non_propagating_cache.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/repeat_view.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/drop_while_view.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/elements_view.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/filter_view.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/join_view.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/iterator_with_data.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/lazy_split_view.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/single_view.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/rbegin.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/rend.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/reverse_view.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/split_view.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/take_view.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/take_while_view.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/to.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/transform_view.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/views.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/zip_view.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/istream_view.h \
+  /usr/local/include/nlohmann/detail/string_utils.hpp \
+  /usr/local/include/nlohmann/byte_container_with_subtype.hpp \
+  /usr/local/include/nlohmann/detail/hash.hpp \
+  /usr/local/include/nlohmann/detail/input/binary_reader.hpp \
+  /usr/local/include/nlohmann/detail/input/input_adapters.hpp \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/numeric \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__numeric/accumulate.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__numeric/adjacent_difference.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__numeric/exclusive_scan.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__numeric/gcd_lcm.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__numeric/inclusive_scan.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__numeric/inner_product.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__numeric/iota.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__numeric/midpoint.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__numeric/partial_sum.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__numeric/pstl_reduce.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__numeric/transform_exclusive_scan.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__numeric/transform_inclusive_scan.h \
+  /usr/local/include/nlohmann/detail/input/json_sax.hpp \
+  /usr/local/include/nlohmann/detail/input/lexer.hpp \
+  /usr/local/include/nlohmann/detail/meta/is_sax.hpp \
+  /usr/local/include/nlohmann/detail/input/parser.hpp \
+  /usr/local/include/nlohmann/detail/iterators/internal_iterator.hpp \
+  /usr/local/include/nlohmann/detail/iterators/primitive_iterator.hpp \
+  /usr/local/include/nlohmann/detail/iterators/iter_impl.hpp \
+  /usr/local/include/nlohmann/detail/iterators/json_reverse_iterator.hpp \
+  /usr/local/include/nlohmann/detail/json_custom_base_class.hpp \
+  /usr/local/include/nlohmann/detail/json_pointer.hpp \
+  /usr/local/include/nlohmann/detail/json_ref.hpp \
+  /usr/local/include/nlohmann/detail/output/binary_writer.hpp \
+  /usr/local/include/nlohmann/detail/output/output_adapters.hpp \
+  /usr/local/include/nlohmann/detail/output/serializer.hpp \
+  /usr/local/include/nlohmann/detail/conversions/to_chars.hpp \
+  /usr/local/include/nlohmann/ordered_map.hpp \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/any \
+  /usr/local/include/nlohmann/detail/macro_unscope.hpp \
+  /usr/local/include/nlohmann/thirdparty/hedley/hedley_undef.hpp
