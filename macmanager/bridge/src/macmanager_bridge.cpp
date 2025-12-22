@@ -188,6 +188,13 @@ void mm_destroy(mm_handle_t* h){
     delete h;
 }
 void mm_free_string_array(mm_string_array_t* p){
-    delete p;
+    if(p->data){
+        for(size_t i = 0; i < p->size; i++){
+            free(p->data[i]);
+        }
+        free(p->data);
+    }
+    p->data = nullptr;
+    p->size = 0;
 }
 
