@@ -23,6 +23,10 @@ void mm_get_file_paths(mm_handle_t* h, mm_status_t* status, mm_get_file_args_t* 
         if(status) *status = MM_ERR_INVALID_ARG;
         return;
     }
+    if(!h){
+         if(status) *status = MM_ERR_INVALID_ARG;
+        return;
+    }
     if((args->modified_after < 0 && args->modified_after != -1) || (args->modified_within < 0 && args->modified_within != -1)){
         if(status) *status = MM_ERR_INVALID_ARG;
         return;
@@ -96,34 +100,34 @@ mm_handle_t* mm_create(mm_status* status){
         return nullptr;
     }
 }
-void mm_refresh_db_files(mm_handle_t* h, mm_status_t* status, char** locations, int numLocations, char** fileTypes, int numFilesTypes, int numWorkers){
+void mm_refresh_db_files(mm_handle_t* h, mm_status_t* status, mm_string_array_t* locations, mm_string_array_t* file_types, int num_workers){
     if(status) *status = MM_OK;
     //convert a bunch of char**'s to their actual cpp objects that fm expects
-    if(numFilesTypes <= 0 || numLocations <= 0 || !h || numWorkers == 0){
+    if(file_types->size <= 0 || locations->size <= 0 || !h || num_workers == 0){
         if(status){ *status = MM_ERR_INVALID_ARG;}
         return;
     }
     std::vector<std::string> fs_locations;
-    fs_locations.resize(numLocations);
+    fs_locations.resize(locations->size);
     std::set<std::string> fs_fileTypes;
     try {
-        for(int i = 0; i < numLocations; i++){
-            if(!locations[i]){ 
+        for(int i = 0; i < locations->size; i++){
+            if(!locations->data[i]){ 
                 if(status) *status = MM_ERR_INVALID_ARG; 
                 return;
             }
-            std::string curLocation(locations[i]);
+            std::string curLocation(locations->data[i]);
         }
-        for(int i = 0; i < numFilesTypes; i++){
-            if(!fileTypes[i]){ 
+        for(int i = 0; i < file_types->size; i++){
+            if(!file_types->data[i]){ 
                 if(status) *status = MM_ERR_INVALID_ARG; 
                 return;
             }
-            std::string fileType(fileTypes[i]);
+            std::string fileType(file_types->data[i]);
             fs_fileTypes.insert(fileType);
         }
             
-        h->fm.refresh_db_files(fs_locations, fs_fileTypes, numWorkers, h->db);
+        h->fm.refresh_db_files(fs_locations, fs_fileTypes, num_workers, h->db);
     }
     catch(std::bad_alloc&){
         if(status) *status = MM_ERR_OOM;
@@ -143,19 +147,19 @@ void mm_refresh_db_files(mm_handle_t* h, mm_status_t* status, char** locations, 
     }
         
 }
-void mm_stage_files(mm_handle_t* h, mm_status_t* status, char** fileList, int numFiles){
+void mm_stage_files(mm_handle_t* h, mm_status_t* status, mm_string_array_t* file_list){
     if(status) *status = MM_OK; 
-    if(!h || numFiles <= 0)
+    if(!h || file_list->size <= 0)
         if(status) *status = MM_ERR_INVALID_ARG;
     std::vector<std::filesystem::path> filePaths;
-    filePaths.resize(numFiles);
+    filePaths.resize(file_list->size);
     try {
-        for(int i = 0; i < numFiles; i++){
-        if(!fileList[i]){
+        for(int i = 0; i < file_list->size; i++){
+        if(!file_list->data[i]){
             if(status) *status = MM_ERR_INVALID_ARG;
             return;
         }
-        std::filesystem::path pathStr = std::string(fileList[i]);
+        std::filesystem::path pathStr = std::string(file_list->data[i]);
         filePaths.push_back(pathStr);
     }
     h->fm.stage_files(filePaths);
@@ -183,7 +187,7 @@ void mm_stage_files(mm_handle_t* h, mm_status_t* status, char** fileList, int nu
 void mm_destroy(mm_handle_t* h){
     delete h;
 }
-void mm_free(void* p){
+void mm_free_string_array(mm_string_array_t* p){
     delete p;
 }
 

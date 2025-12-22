@@ -49,14 +49,14 @@ mm_handle_t* mm_create(mm_status_t* status);
 void mm_destroy(mm_handle_t* h);
 
 void mm_get_file_paths(mm_handle_t* h, mm_status_t* status, mm_get_file_args_t* args, mm_string_array_t* file_paths);
-//TODO: change these to mm_string_arrays
-void mm_refresh_db_files(mm_handle_t* h, mm_status_t* status, char** locations, int numLocations, char** fileTypes, int numFileTypes, int numWorkers);
+
+void mm_refresh_db_files(mm_handle_t* h, mm_status_t* status, mm_string_array_t* locations, mm_string_array_t* file_types, int num_workers);
 //TODO -> change the char** and int to a mm_string_array
-void mm_stage_files(mm_handle_t* h, mm_status_t* status, char** fileList, int numFiles);
+void mm_stage_files(mm_handle_t* h, mm_status_t* status, mm_string_array_t* file_list);
 
 // Error helpers / memory management
 // Any char* returned through out params must be freed with mm_free().
-void mm_free(void* p);
+void mm_free_string_array(mm_string_array_t* p);
 
 // Optional: get last error (per-handle) if you don't want out_error everywhere
 const char* mm_last_error(mm_handle_t* h);
