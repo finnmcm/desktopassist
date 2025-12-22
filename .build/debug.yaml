@@ -1,0 +1,68 @@
+client:
+  name: basic
+  file-system: device-agnostic
+tools: {}
+targets:
+  "MacManagerBridge-arm64-apple-macosx14.0-debug.module": ["<MacManagerBridge-arm64-apple-macosx14.0-debug.module>"]
+  "MacManagerCore-arm64-apple-macosx14.0-debug.module": ["<MacManagerCore-arm64-apple-macosx14.0-debug.module>"]
+  "PackageStructure": ["<PackageStructure>"]
+  "main": ["<MacManagerBridge-arm64-apple-macosx14.0-debug.module>","<MacManagerCore-arm64-apple-macosx14.0-debug.module>"]
+  "test": ["<MacManagerBridge-arm64-apple-macosx14.0-debug.module>","<MacManagerCore-arm64-apple-macosx14.0-debug.module>"]
+default: "main"
+nodes:
+  "/Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/macmanager/bridge/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+  "/Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/macmanager/core/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+commands:
+  "/Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/.build/arm64-apple-macosx/debug/MacManagerBridge.build/src/macmanager_bridge.cpp.o":
+    tool: clang
+    inputs: ["/Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/macmanager/bridge/src/macmanager_bridge.cpp"]
+    outputs: ["/Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/.build/arm64-apple-macosx/debug/MacManagerBridge.build/src/macmanager_bridge.cpp.o"]
+    description: "Compiling MacManagerBridge src/macmanager_bridge.cpp"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang","-fobjc-arc","-target","arm64-apple-macosx13.0","-O0","-DSWIFT_PACKAGE=1","-DDEBUG=1","-fblocks","-index-store-path","/Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/.build/arm64-apple-macosx/debug/index/store","-I","/Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/macmanager/bridge/include","-I","/Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/macmanager/core/include","-fmodule-map-file=/Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/.build/arm64-apple-macosx/debug/MacManagerCore.build/module.modulemap","-std=c++20","-isysroot","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.1.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-fPIC","-g","-g","-MD","-MT","dependencies","-MF","/Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/.build/arm64-apple-macosx/debug/MacManagerBridge.build/src/macmanager_bridge.cpp.d","-c","/Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/macmanager/bridge/src/macmanager_bridge.cpp","-o","/Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/.build/arm64-apple-macosx/debug/MacManagerBridge.build/src/macmanager_bridge.cpp.o"]
+    deps: "/Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/.build/arm64-apple-macosx/debug/MacManagerBridge.build/src/macmanager_bridge.cpp.d"
+
+  "/Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/.build/arm64-apple-macosx/debug/MacManagerCore.build/src/app.cpp.o":
+    tool: clang
+    inputs: ["/Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/macmanager/core/src/app.cpp"]
+    outputs: ["/Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/.build/arm64-apple-macosx/debug/MacManagerCore.build/src/app.cpp.o"]
+    description: "Compiling MacManagerCore src/app.cpp"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang","-fobjc-arc","-target","arm64-apple-macosx13.0","-O0","-DSWIFT_PACKAGE=1","-DDEBUG=1","-fblocks","-index-store-path","/Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/.build/arm64-apple-macosx/debug/index/store","-I","/Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/macmanager/core/include","-std=c++20","-isysroot","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.1.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-fPIC","-g","-g","-MD","-MT","dependencies","-MF","/Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/.build/arm64-apple-macosx/debug/MacManagerCore.build/src/app.cpp.d","-c","/Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/macmanager/core/src/app.cpp","-o","/Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/.build/arm64-apple-macosx/debug/MacManagerCore.build/src/app.cpp.o"]
+    deps: "/Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/.build/arm64-apple-macosx/debug/MacManagerCore.build/src/app.cpp.d"
+
+  "/Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/.build/arm64-apple-macosx/debug/MacManagerCore.build/src/database.cpp.o":
+    tool: clang
+    inputs: ["/Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/macmanager/core/src/database.cpp"]
+    outputs: ["/Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/.build/arm64-apple-macosx/debug/MacManagerCore.build/src/database.cpp.o"]
+    description: "Compiling MacManagerCore src/database.cpp"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang","-fobjc-arc","-target","arm64-apple-macosx13.0","-O0","-DSWIFT_PACKAGE=1","-DDEBUG=1","-fblocks","-index-store-path","/Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/.build/arm64-apple-macosx/debug/index/store","-I","/Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/macmanager/core/include","-std=c++20","-isysroot","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.1.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-fPIC","-g","-g","-MD","-MT","dependencies","-MF","/Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/.build/arm64-apple-macosx/debug/MacManagerCore.build/src/database.cpp.d","-c","/Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/macmanager/core/src/database.cpp","-o","/Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/.build/arm64-apple-macosx/debug/MacManagerCore.build/src/database.cpp.o"]
+    deps: "/Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/.build/arm64-apple-macosx/debug/MacManagerCore.build/src/database.cpp.d"
+
+  "/Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/.build/arm64-apple-macosx/debug/MacManagerCore.build/src/file_manager.cpp.o":
+    tool: clang
+    inputs: ["/Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/macmanager/core/src/file_manager.cpp"]
+    outputs: ["/Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/.build/arm64-apple-macosx/debug/MacManagerCore.build/src/file_manager.cpp.o"]
+    description: "Compiling MacManagerCore src/file_manager.cpp"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang","-fobjc-arc","-target","arm64-apple-macosx13.0","-O0","-DSWIFT_PACKAGE=1","-DDEBUG=1","-fblocks","-index-store-path","/Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/.build/arm64-apple-macosx/debug/index/store","-I","/Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/macmanager/core/include","-std=c++20","-isysroot","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.1.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-fPIC","-g","-g","-MD","-MT","dependencies","-MF","/Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/.build/arm64-apple-macosx/debug/MacManagerCore.build/src/file_manager.cpp.d","-c","/Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/macmanager/core/src/file_manager.cpp","-o","/Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/.build/arm64-apple-macosx/debug/MacManagerCore.build/src/file_manager.cpp.o"]
+    deps: "/Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/.build/arm64-apple-macosx/debug/MacManagerCore.build/src/file_manager.cpp.d"
+
+  "<MacManagerBridge-arm64-apple-macosx14.0-debug.module>":
+    tool: phony
+    inputs: ["/Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/.build/arm64-apple-macosx/debug/MacManagerBridge.build/src/macmanager_bridge.cpp.o"]
+    outputs: ["<MacManagerBridge-arm64-apple-macosx14.0-debug.module>"]
+
+  "<MacManagerCore-arm64-apple-macosx14.0-debug.module>":
+    tool: phony
+    inputs: ["/Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/.build/arm64-apple-macosx/debug/MacManagerCore.build/src/app.cpp.o","/Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/.build/arm64-apple-macosx/debug/MacManagerCore.build/src/database.cpp.o","/Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/.build/arm64-apple-macosx/debug/MacManagerCore.build/src/file_manager.cpp.o"]
+    outputs: ["<MacManagerCore-arm64-apple-macosx14.0-debug.module>"]
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/macmanager/bridge/","/Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/macmanager/core/","/Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/Package.swift","/Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+

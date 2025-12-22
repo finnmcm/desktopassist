@@ -36,12 +36,16 @@ typedef struct mm_get_file_args {
     size_t num_file_extensions;
 } mm_get_file_args_t;
 
+
+/*.    IMPORTANT -> mm_string_array should not be allocated and should be passed as a stack object
+       CALLEE populates the data field */
 typedef struct mm_string_array {
     char** data;
     size_t size;
 } mm_string_array_t;
 // Define OPAQUE TYPE -> we forward the struct so we can use it in our ABI reference, but we actually define what it is in the cpp
 // implementation
+struct mm_handle;
 typedef struct mm_handle mm_handle_t;
 
 
