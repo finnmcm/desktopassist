@@ -1,0 +1,579 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AC5DC7322EFCAD4D006EB01B /* MacAssist in Frameworks */ = {isa = PBXBuildFile; productRef = AC5DC7312EFCAD4D006EB01B /* MacAssist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AC5DC7142EFCAD3A006EB01B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC5DC6FA2EFCAD39006EB01B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC5DC7012EFCAD39006EB01B;
+			remoteInfo = MacAssist;
+		};
+		AC5DC71E2EFCAD3A006EB01B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC5DC6FA2EFCAD39006EB01B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC5DC7012EFCAD39006EB01B;
+			remoteInfo = MacAssist;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AC5DC7022EFCAD39006EB01B /* MacAssist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacAssist.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC5DC7132EFCAD3A006EB01B /* MacAssistTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MacAssistTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC5DC71D2EFCAD3A006EB01B /* MacAssistUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MacAssistUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		AC5DC7042EFCAD39006EB01B /* MacAssist */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = MacAssist;
+			sourceTree = "<group>";
+		};
+		AC5DC7162EFCAD3A006EB01B /* MacAssistTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = MacAssistTests;
+			sourceTree = "<group>";
+		};
+		AC5DC7202EFCAD3A006EB01B /* MacAssistUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = MacAssistUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AC5DC6FF2EFCAD39006EB01B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC5DC7322EFCAD4D006EB01B /* MacAssist in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC5DC7102EFCAD3A006EB01B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC5DC71A2EFCAD3A006EB01B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AC5DC6F92EFCAD39006EB01B = {
+			isa = PBXGroup;
+			children = (
+				AC5DC7042EFCAD39006EB01B /* MacAssist */,
+				AC5DC7162EFCAD3A006EB01B /* MacAssistTests */,
+				AC5DC7202EFCAD3A006EB01B /* MacAssistUITests */,
+				AC5DC7032EFCAD39006EB01B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AC5DC7032EFCAD39006EB01B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC5DC7022EFCAD39006EB01B /* MacAssist.app */,
+				AC5DC7132EFCAD3A006EB01B /* MacAssistTests.xctest */,
+				AC5DC71D2EFCAD3A006EB01B /* MacAssistUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AC5DC7012EFCAD39006EB01B /* MacAssist */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC5DC7272EFCAD3A006EB01B /* Build configuration list for PBXNativeTarget "MacAssist" */;
+			buildPhases = (
+				AC5DC6FE2EFCAD39006EB01B /* Sources */,
+				AC5DC6FF2EFCAD39006EB01B /* Frameworks */,
+				AC5DC7002EFCAD39006EB01B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				AC5DC7042EFCAD39006EB01B /* MacAssist */,
+			);
+			name = MacAssist;
+			packageProductDependencies = (
+				AC5DC7312EFCAD4D006EB01B /* MacAssist */,
+			);
+			productName = MacAssist;
+			productReference = AC5DC7022EFCAD39006EB01B /* MacAssist.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AC5DC7122EFCAD3A006EB01B /* MacAssistTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC5DC72A2EFCAD3A006EB01B /* Build configuration list for PBXNativeTarget "MacAssistTests" */;
+			buildPhases = (
+				AC5DC70F2EFCAD3A006EB01B /* Sources */,
+				AC5DC7102EFCAD3A006EB01B /* Frameworks */,
+				AC5DC7112EFCAD3A006EB01B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC5DC7152EFCAD3A006EB01B /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				AC5DC7162EFCAD3A006EB01B /* MacAssistTests */,
+			);
+			name = MacAssistTests;
+			packageProductDependencies = (
+			);
+			productName = MacAssistTests;
+			productReference = AC5DC7132EFCAD3A006EB01B /* MacAssistTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AC5DC71C2EFCAD3A006EB01B /* MacAssistUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC5DC72D2EFCAD3A006EB01B /* Build configuration list for PBXNativeTarget "MacAssistUITests" */;
+			buildPhases = (
+				AC5DC7192EFCAD3A006EB01B /* Sources */,
+				AC5DC71A2EFCAD3A006EB01B /* Frameworks */,
+				AC5DC71B2EFCAD3A006EB01B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC5DC71F2EFCAD3A006EB01B /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				AC5DC7202EFCAD3A006EB01B /* MacAssistUITests */,
+			);
+			name = MacAssistUITests;
+			packageProductDependencies = (
+			);
+			productName = MacAssistUITests;
+			productReference = AC5DC71D2EFCAD3A006EB01B /* MacAssistUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AC5DC6FA2EFCAD39006EB01B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1610;
+				LastUpgradeCheck = 1610;
+				TargetAttributes = {
+					AC5DC7012EFCAD39006EB01B = {
+						CreatedOnToolsVersion = 16.1;
+					};
+					AC5DC7122EFCAD3A006EB01B = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = AC5DC7012EFCAD39006EB01B;
+					};
+					AC5DC71C2EFCAD3A006EB01B = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = AC5DC7012EFCAD39006EB01B;
+					};
+				};
+			};
+			buildConfigurationList = AC5DC6FD2EFCAD39006EB01B /* Build configuration list for PBXProject "MacAssist" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AC5DC6F92EFCAD39006EB01B;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				AC5DC7302EFCAD4D006EB01B /* XCLocalSwiftPackageReference "../../../MacAssist" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = AC5DC7032EFCAD39006EB01B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AC5DC7012EFCAD39006EB01B /* MacAssist */,
+				AC5DC7122EFCAD3A006EB01B /* MacAssistTests */,
+				AC5DC71C2EFCAD3A006EB01B /* MacAssistUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AC5DC7002EFCAD39006EB01B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC5DC7112EFCAD3A006EB01B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC5DC71B2EFCAD3A006EB01B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AC5DC6FE2EFCAD39006EB01B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC5DC70F2EFCAD3A006EB01B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC5DC7192EFCAD3A006EB01B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AC5DC7152EFCAD3A006EB01B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC5DC7012EFCAD39006EB01B /* MacAssist */;
+			targetProxy = AC5DC7142EFCAD3A006EB01B /* PBXContainerItemProxy */;
+		};
+		AC5DC71F2EFCAD3A006EB01B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC5DC7012EFCAD39006EB01B /* MacAssist */;
+			targetProxy = AC5DC71E2EFCAD3A006EB01B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AC5DC7252EFCAD3A006EB01B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AC5DC7262EFCAD3A006EB01B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		AC5DC7282EFCAD3A006EB01B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MacAssist/MacAssist.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MacAssist/Preview Content\"";
+				DEVELOPMENT_TEAM = KD89TX699B;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.finnmcm.MacAssist;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		AC5DC7292EFCAD3A006EB01B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MacAssist/MacAssist.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MacAssist/Preview Content\"";
+				DEVELOPMENT_TEAM = KD89TX699B;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.finnmcm.MacAssist;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		AC5DC72B2EFCAD3A006EB01B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KD89TX699B;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.finnmcm.MacAssistTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MacAssist.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MacAssist";
+			};
+			name = Debug;
+		};
+		AC5DC72C2EFCAD3A006EB01B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KD89TX699B;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.finnmcm.MacAssistTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MacAssist.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MacAssist";
+			};
+			name = Release;
+		};
+		AC5DC72E2EFCAD3A006EB01B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KD89TX699B;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.finnmcm.MacAssistUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = MacAssist;
+			};
+			name = Debug;
+		};
+		AC5DC72F2EFCAD3A006EB01B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KD89TX699B;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.finnmcm.MacAssistUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = MacAssist;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AC5DC6FD2EFCAD39006EB01B /* Build configuration list for PBXProject "MacAssist" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC5DC7252EFCAD3A006EB01B /* Debug */,
+				AC5DC7262EFCAD3A006EB01B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC5DC7272EFCAD3A006EB01B /* Build configuration list for PBXNativeTarget "MacAssist" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC5DC7282EFCAD3A006EB01B /* Debug */,
+				AC5DC7292EFCAD3A006EB01B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC5DC72A2EFCAD3A006EB01B /* Build configuration list for PBXNativeTarget "MacAssistTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC5DC72B2EFCAD3A006EB01B /* Debug */,
+				AC5DC72C2EFCAD3A006EB01B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC5DC72D2EFCAD3A006EB01B /* Build configuration list for PBXNativeTarget "MacAssistUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC5DC72E2EFCAD3A006EB01B /* Debug */,
+				AC5DC72F2EFCAD3A006EB01B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		AC5DC7302EFCAD4D006EB01B /* XCLocalSwiftPackageReference "../../../MacAssist" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../../../MacAssist;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AC5DC7312EFCAD4D006EB01B /* MacAssist */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MacAssist;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = AC5DC6FA2EFCAD39006EB01B /* Project object */;
+}
