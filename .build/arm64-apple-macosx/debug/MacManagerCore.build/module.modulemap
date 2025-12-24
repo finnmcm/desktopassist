@@ -1,4 +1,0 @@
-module MacManagerCore {
-    umbrella "/Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/macmanager/core/include"
-    export *
-}

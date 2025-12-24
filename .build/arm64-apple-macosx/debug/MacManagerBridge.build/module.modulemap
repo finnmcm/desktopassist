@@ -1,4 +1,0 @@
-module MacManagerBridge {
-    umbrella "/Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/macmanager/bridge/include"
-    export *
-}
