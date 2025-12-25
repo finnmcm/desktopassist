@@ -2,12 +2,12 @@
 import PackageDescription
 
 let package = Package(
-  name: "MacAssist",
+  name: "MacManager",
   platforms: [
     .macOS(.v10_15)
   ],
   products: [
-    .library(name: "MacAssist", targets: ["MacManagerBridge"])
+    .library(name: "MacManager", targets: ["MacManagerBridge"])
   ],
   targets: [
     // 1) C++ core

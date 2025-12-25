@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  MacAssist
+//  Donna
 //
 //  Created by Finn McMillan on 12/24/25.
 //

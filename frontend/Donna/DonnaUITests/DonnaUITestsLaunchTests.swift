@@ -1,13 +1,13 @@
 //
-//  MacAssistUITestsLaunchTests.swift
-//  MacAssistUITests
+//  DonnaUITestsLaunchTests.swift
+//  DonnaUITests
 //
 //  Created by Finn McMillan on 12/24/25.
 //
 
 import XCTest
 
-final class MacAssistUITestsLaunchTests: XCTestCase {
+final class DonnaUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

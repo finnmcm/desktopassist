@@ -1,13 +1,13 @@
 //
-//  MacAssistUITests.swift
-//  MacAssistUITests
+//  DonnaUITests.swift
+//  DonnaUITests
 //
 //  Created by Finn McMillan on 12/24/25.
 //
 
 import XCTest
 
-final class MacAssistUITests: XCTestCase {
+final class DonnaUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
