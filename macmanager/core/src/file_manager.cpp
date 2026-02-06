@@ -95,6 +95,7 @@ namespace macmanager {
             if(dbWriteQueue.writeQueue.empty() && dbWriteQueue.workers_running.load(std::memory_order_acquire) == 0){
                 break;
             }   
+            ts_print("GETTING FILES");
             DbFile curFile = dbWriteQueue.writeQueue.front();
             dbWriteQueue.writeQueue.pop_front();
 
@@ -108,8 +109,8 @@ namespace macmanager {
 
     }
     FileManager::FileManager(){
-        root = std::getenv("HOME");
     }
+
     void FileManager::refresh_db_files(const std::vector<std::string>& locationStrs, const std::set<std::string>& fileTypes, int numWorkers, Database& db){
         std::vector<std::thread> threads;
         //work queue for storing directories
@@ -123,6 +124,9 @@ namespace macmanager {
         std::vector<fs::path> locations;
         locations.resize(locationStrs.size());
         for(size_t i = 0; i < locations.size(); i++){
+            fs::path curPath = root / locationStrs[i];
+          //  std::cout << "locStr : " << locationStrs[i] << std::endl;
+           // std::cout << curPath << std::endl;
             locations[i] = this->string_to_path(locationStrs[i]);
         }
 
@@ -144,6 +148,7 @@ namespace macmanager {
                 t.join();
         }
         writer.join();
+        std::cout << "finished" << std::endl;
         return;
     }
     bool FileManager::find(const std::string& filename, fs::path& filepath){

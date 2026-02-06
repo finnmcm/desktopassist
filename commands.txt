@@ -24,9 +24,7 @@ Additionally, if build folder is cluttered, just run:
 rm -rf build
 mkdir build
 
-DB stored at:
-~/Library/Application\ Support/MacAssistant/
-- open with: 
-sqlite3 "$HOME/Library/Application Support/MacAssistant/state.db"
+- open DB with: 
+NEW DB: sqlite3 "/Users/finnmcmillion/Library/Containers/com.finnmcm.Donna/Data/Library/Application Support/Donna/state.db"
 
 

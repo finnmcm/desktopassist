@@ -7,12 +7,18 @@
 //the typedef in the header file allows us to reference the struct there, so we alias it 
 
 struct mm_handle {
+    std::string storedPath;  // Store path first to ensure it outlives db
     macmanager::FileManager fm;
     macmanager::Database db;
 
-    mm_handle(std::string& dbPath) :
-        fm(),
-        db(dbPath) {}
+    explicit mm_handle(const std::string& dbPath)
+    : storedPath(dbPath),  // Copy the path first (initialized before fm and db)
+      fm(),
+      db(storedPath) {     // Use the stored copy
+        std::cerr << "[mm_handle] this=" << this
+                  << " storedPath=" << storedPath
+                  << " db@" << &db << "\n";
+      }
 };
 void mm_get_file_paths(mm_handle_t* h, mm_status_t* status, mm_get_file_args_t* args, mm_string_array_t* return_paths){
     /*
@@ -58,7 +64,7 @@ void mm_get_file_paths(mm_handle_t* h, mm_status_t* status, mm_get_file_args_t* 
         int64_t db_modified_after = args->modified_after;
         std::vector<macmanager::DbFile> db_files = h->db.query_files(db_file_names, db_file_exts, db_modified_within, db_modified_after);
         return_paths->size = db_files.size();
-        return_paths->data = (char**)malloc(sizeof(return_paths->size * sizeof(char*)));
+        return_paths->data = (char**)malloc(return_paths->size * sizeof(char*));
         if(!return_paths->data){
             if(status) *status = MM_ERR_OOM;
             return;
@@ -84,12 +90,12 @@ void mm_get_file_paths(mm_handle_t* h, mm_status_t* status, mm_get_file_args_t* 
         return;
     }
 }
-mm_handle_t* mm_create(mm_status* status){
+mm_handle_t* mm_create(mm_status* status, const char* dbPath){
     if(status) *status = MM_OK;
     try {
-        //hardcoded for now
-        std::string dbPath = std::string(std::getenv("HOME")) + "/Library/Application Support/MacAssistant/state.db";
-        mm_handle* m = new mm_handle(dbPath);
+        std::string path(dbPath);
+        std::cerr << "[mm_create] path=" << path << std::endl;
+        mm_handle* m = new mm_handle(path);
         return m;
     } catch(std::bad_alloc&){ // catch all exceptions
         if(status) *status = MM_ERR_OOM;
@@ -117,6 +123,8 @@ void mm_refresh_db_files(mm_handle_t* h, mm_status_t* status, mm_string_array_t*
                 return;
             }
             std::string curLocation(locations->data[i]);
+            std::cout << "pushing location from bridge: " << curLocation << std::endl;
+            fs_locations.push_back(curLocation);
         }
         for(int i = 0; i < file_types->size; i++){
             if(!file_types->data[i]){ 

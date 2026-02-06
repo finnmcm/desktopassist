@@ -49,7 +49,7 @@ struct mm_handle;
 typedef struct mm_handle mm_handle_t;
 
 
-mm_handle_t* mm_create(mm_status_t* status);
+mm_handle_t* mm_create(mm_status_t* status, const char* dbPath);
 void mm_destroy(mm_handle_t* h);
 
 void mm_get_file_paths(mm_handle_t* h, mm_status_t* status, mm_get_file_args_t* args, mm_string_array_t* file_paths);

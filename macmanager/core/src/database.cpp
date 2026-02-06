@@ -18,7 +18,9 @@ struct DbFile {
 class Database {
 public:
     explicit Database(const std::string& path) {
+        std::cerr << "[Database] constructor path=" << path << "\n";
         if (sqlite3_open(path.c_str(), &db) != SQLITE_OK) {
+            std::cerr << "[Database] sqlite3_open failed for: " << path << std::endl;
             throw std::runtime_error("Failed to open DB");
         }
     }
@@ -53,6 +55,7 @@ public:
         + std::to_string(f.last_modified) +
         ");"
     );
+    std::cout << "file successfully written!" << std::endl;
     }
 
     std::vector<DbFile> query_files(const std::vector<std::string>& file_names, const std::vector<std::string>& file_extensions, 

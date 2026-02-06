@@ -968,53 +968,8 @@ macmanager/core/CMakeFiles/macmanager_core.dir/src/app.cpp.o: /Users/finnmcmilli
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/xlocale/_wctype.h \
   /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/macmanager/core/src/database.cpp \
   /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/macmanager/core/include/file_manager.h \
-  /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/macmanager/core/include/run_app.h \
-  /usr/local/include/nlohmann/adl_serializer.hpp \
-  /usr/local/include/nlohmann/byte_container_with_subtype.hpp \
-  /usr/local/include/nlohmann/detail/abi_macros.hpp \
-  /usr/local/include/nlohmann/detail/conversions/from_json.hpp \
-  /usr/local/include/nlohmann/detail/conversions/to_chars.hpp \
-  /usr/local/include/nlohmann/detail/conversions/to_json.hpp \
-  /usr/local/include/nlohmann/detail/exceptions.hpp \
-  /usr/local/include/nlohmann/detail/hash.hpp \
-  /usr/local/include/nlohmann/detail/input/binary_reader.hpp \
-  /usr/local/include/nlohmann/detail/input/input_adapters.hpp \
-  /usr/local/include/nlohmann/detail/input/json_sax.hpp \
-  /usr/local/include/nlohmann/detail/input/lexer.hpp \
-  /usr/local/include/nlohmann/detail/input/parser.hpp \
-  /usr/local/include/nlohmann/detail/input/position_t.hpp \
-  /usr/local/include/nlohmann/detail/iterators/internal_iterator.hpp \
-  /usr/local/include/nlohmann/detail/iterators/iter_impl.hpp \
-  /usr/local/include/nlohmann/detail/iterators/iteration_proxy.hpp \
-  /usr/local/include/nlohmann/detail/iterators/iterator_traits.hpp \
-  /usr/local/include/nlohmann/detail/iterators/json_reverse_iterator.hpp \
-  /usr/local/include/nlohmann/detail/iterators/primitive_iterator.hpp \
-  /usr/local/include/nlohmann/detail/json_custom_base_class.hpp \
-  /usr/local/include/nlohmann/detail/json_pointer.hpp \
-  /usr/local/include/nlohmann/detail/json_ref.hpp \
-  /usr/local/include/nlohmann/detail/macro_scope.hpp \
-  /usr/local/include/nlohmann/detail/macro_unscope.hpp \
-  /usr/local/include/nlohmann/detail/meta/call_std/begin.hpp \
-  /usr/local/include/nlohmann/detail/meta/call_std/end.hpp \
-  /usr/local/include/nlohmann/detail/meta/cpp_future.hpp \
-  /usr/local/include/nlohmann/detail/meta/detected.hpp \
-  /usr/local/include/nlohmann/detail/meta/identity_tag.hpp \
-  /usr/local/include/nlohmann/detail/meta/is_sax.hpp \
-  /usr/local/include/nlohmann/detail/meta/std_fs.hpp \
-  /usr/local/include/nlohmann/detail/meta/type_traits.hpp \
-  /usr/local/include/nlohmann/detail/meta/void_t.hpp \
-  /usr/local/include/nlohmann/detail/output/binary_writer.hpp \
-  /usr/local/include/nlohmann/detail/output/output_adapters.hpp \
-  /usr/local/include/nlohmann/detail/output/serializer.hpp \
-  /usr/local/include/nlohmann/detail/string_concat.hpp \
-  /usr/local/include/nlohmann/detail/string_escape.hpp \
-  /usr/local/include/nlohmann/detail/string_utils.hpp \
-  /usr/local/include/nlohmann/detail/value_t.hpp \
-  /usr/local/include/nlohmann/json.hpp \
-  /usr/local/include/nlohmann/json_fwd.hpp \
-  /usr/local/include/nlohmann/ordered_map.hpp \
-  /usr/local/include/nlohmann/thirdparty/hedley/hedley.hpp \
-  /usr/local/include/nlohmann/thirdparty/hedley/hedley_undef.hpp
+  /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/macmanager/core/include/nlohmann/json.hpp \
+  /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/macmanager/core/include/run_app.h
 
 macmanager/core/CMakeFiles/macmanager_core.dir/src/database.cpp.o: /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/macmanager/core/src/database.cpp \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include/__stdarg___gnuc_va_list.h \
@@ -1978,52 +1933,7 @@ macmanager/core/CMakeFiles/macmanager_core.dir/src/database.cpp.o: /Users/finnmc
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/xlocale/_time.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/xlocale/_wchar.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/xlocale/_wctype.h \
-  /usr/local/include/nlohmann/adl_serializer.hpp \
-  /usr/local/include/nlohmann/byte_container_with_subtype.hpp \
-  /usr/local/include/nlohmann/detail/abi_macros.hpp \
-  /usr/local/include/nlohmann/detail/conversions/from_json.hpp \
-  /usr/local/include/nlohmann/detail/conversions/to_chars.hpp \
-  /usr/local/include/nlohmann/detail/conversions/to_json.hpp \
-  /usr/local/include/nlohmann/detail/exceptions.hpp \
-  /usr/local/include/nlohmann/detail/hash.hpp \
-  /usr/local/include/nlohmann/detail/input/binary_reader.hpp \
-  /usr/local/include/nlohmann/detail/input/input_adapters.hpp \
-  /usr/local/include/nlohmann/detail/input/json_sax.hpp \
-  /usr/local/include/nlohmann/detail/input/lexer.hpp \
-  /usr/local/include/nlohmann/detail/input/parser.hpp \
-  /usr/local/include/nlohmann/detail/input/position_t.hpp \
-  /usr/local/include/nlohmann/detail/iterators/internal_iterator.hpp \
-  /usr/local/include/nlohmann/detail/iterators/iter_impl.hpp \
-  /usr/local/include/nlohmann/detail/iterators/iteration_proxy.hpp \
-  /usr/local/include/nlohmann/detail/iterators/iterator_traits.hpp \
-  /usr/local/include/nlohmann/detail/iterators/json_reverse_iterator.hpp \
-  /usr/local/include/nlohmann/detail/iterators/primitive_iterator.hpp \
-  /usr/local/include/nlohmann/detail/json_custom_base_class.hpp \
-  /usr/local/include/nlohmann/detail/json_pointer.hpp \
-  /usr/local/include/nlohmann/detail/json_ref.hpp \
-  /usr/local/include/nlohmann/detail/macro_scope.hpp \
-  /usr/local/include/nlohmann/detail/macro_unscope.hpp \
-  /usr/local/include/nlohmann/detail/meta/call_std/begin.hpp \
-  /usr/local/include/nlohmann/detail/meta/call_std/end.hpp \
-  /usr/local/include/nlohmann/detail/meta/cpp_future.hpp \
-  /usr/local/include/nlohmann/detail/meta/detected.hpp \
-  /usr/local/include/nlohmann/detail/meta/identity_tag.hpp \
-  /usr/local/include/nlohmann/detail/meta/is_sax.hpp \
-  /usr/local/include/nlohmann/detail/meta/std_fs.hpp \
-  /usr/local/include/nlohmann/detail/meta/type_traits.hpp \
-  /usr/local/include/nlohmann/detail/meta/void_t.hpp \
-  /usr/local/include/nlohmann/detail/output/binary_writer.hpp \
-  /usr/local/include/nlohmann/detail/output/output_adapters.hpp \
-  /usr/local/include/nlohmann/detail/output/serializer.hpp \
-  /usr/local/include/nlohmann/detail/string_concat.hpp \
-  /usr/local/include/nlohmann/detail/string_escape.hpp \
-  /usr/local/include/nlohmann/detail/string_utils.hpp \
-  /usr/local/include/nlohmann/detail/value_t.hpp \
-  /usr/local/include/nlohmann/json.hpp \
-  /usr/local/include/nlohmann/json_fwd.hpp \
-  /usr/local/include/nlohmann/ordered_map.hpp \
-  /usr/local/include/nlohmann/thirdparty/hedley/hedley.hpp \
-  /usr/local/include/nlohmann/thirdparty/hedley/hedley_undef.hpp
+  /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/macmanager/core/include/nlohmann/json.hpp
 
 macmanager/core/CMakeFiles/macmanager_core.dir/src/file_manager.cpp.o: /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/macmanager/core/src/file_manager.cpp \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include/__stdarg___gnuc_va_list.h \
@@ -3003,52 +2913,7 @@ macmanager/core/CMakeFiles/macmanager_core.dir/src/file_manager.cpp.o: /Users/fi
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/xlocale/_wctype.h \
   /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/macmanager/core/src/database.cpp \
   /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/macmanager/core/include/file_manager.h \
-  /usr/local/include/nlohmann/adl_serializer.hpp \
-  /usr/local/include/nlohmann/byte_container_with_subtype.hpp \
-  /usr/local/include/nlohmann/detail/abi_macros.hpp \
-  /usr/local/include/nlohmann/detail/conversions/from_json.hpp \
-  /usr/local/include/nlohmann/detail/conversions/to_chars.hpp \
-  /usr/local/include/nlohmann/detail/conversions/to_json.hpp \
-  /usr/local/include/nlohmann/detail/exceptions.hpp \
-  /usr/local/include/nlohmann/detail/hash.hpp \
-  /usr/local/include/nlohmann/detail/input/binary_reader.hpp \
-  /usr/local/include/nlohmann/detail/input/input_adapters.hpp \
-  /usr/local/include/nlohmann/detail/input/json_sax.hpp \
-  /usr/local/include/nlohmann/detail/input/lexer.hpp \
-  /usr/local/include/nlohmann/detail/input/parser.hpp \
-  /usr/local/include/nlohmann/detail/input/position_t.hpp \
-  /usr/local/include/nlohmann/detail/iterators/internal_iterator.hpp \
-  /usr/local/include/nlohmann/detail/iterators/iter_impl.hpp \
-  /usr/local/include/nlohmann/detail/iterators/iteration_proxy.hpp \
-  /usr/local/include/nlohmann/detail/iterators/iterator_traits.hpp \
-  /usr/local/include/nlohmann/detail/iterators/json_reverse_iterator.hpp \
-  /usr/local/include/nlohmann/detail/iterators/primitive_iterator.hpp \
-  /usr/local/include/nlohmann/detail/json_custom_base_class.hpp \
-  /usr/local/include/nlohmann/detail/json_pointer.hpp \
-  /usr/local/include/nlohmann/detail/json_ref.hpp \
-  /usr/local/include/nlohmann/detail/macro_scope.hpp \
-  /usr/local/include/nlohmann/detail/macro_unscope.hpp \
-  /usr/local/include/nlohmann/detail/meta/call_std/begin.hpp \
-  /usr/local/include/nlohmann/detail/meta/call_std/end.hpp \
-  /usr/local/include/nlohmann/detail/meta/cpp_future.hpp \
-  /usr/local/include/nlohmann/detail/meta/detected.hpp \
-  /usr/local/include/nlohmann/detail/meta/identity_tag.hpp \
-  /usr/local/include/nlohmann/detail/meta/is_sax.hpp \
-  /usr/local/include/nlohmann/detail/meta/std_fs.hpp \
-  /usr/local/include/nlohmann/detail/meta/type_traits.hpp \
-  /usr/local/include/nlohmann/detail/meta/void_t.hpp \
-  /usr/local/include/nlohmann/detail/output/binary_writer.hpp \
-  /usr/local/include/nlohmann/detail/output/output_adapters.hpp \
-  /usr/local/include/nlohmann/detail/output/serializer.hpp \
-  /usr/local/include/nlohmann/detail/string_concat.hpp \
-  /usr/local/include/nlohmann/detail/string_escape.hpp \
-  /usr/local/include/nlohmann/detail/string_utils.hpp \
-  /usr/local/include/nlohmann/detail/value_t.hpp \
-  /usr/local/include/nlohmann/json.hpp \
-  /usr/local/include/nlohmann/json_fwd.hpp \
-  /usr/local/include/nlohmann/ordered_map.hpp \
-  /usr/local/include/nlohmann/thirdparty/hedley/hedley.hpp \
-  /usr/local/include/nlohmann/thirdparty/hedley/hedley_undef.hpp
+  /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/macmanager/core/include/nlohmann/json.hpp
 
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/unistd.h:
@@ -3064,56 +2929,6 @@ macmanager/core/CMakeFiles/macmanager_core.dir/src/file_manager.cpp.o: /Users/fi
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__thread/this_thread.h:
 
 /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/macmanager/core/src/file_manager.cpp:
-
-/usr/local/include/nlohmann/thirdparty/hedley/hedley_undef.hpp:
-
-/usr/local/include/nlohmann/ordered_map.hpp:
-
-/usr/local/include/nlohmann/json.hpp:
-
-/usr/local/include/nlohmann/detail/value_t.hpp:
-
-/usr/local/include/nlohmann/detail/string_utils.hpp:
-
-/usr/local/include/nlohmann/detail/string_escape.hpp:
-
-/usr/local/include/nlohmann/detail/output/output_adapters.hpp:
-
-/usr/local/include/nlohmann/detail/meta/void_t.hpp:
-
-/usr/local/include/nlohmann/detail/meta/type_traits.hpp:
-
-/usr/local/include/nlohmann/detail/meta/is_sax.hpp:
-
-/usr/local/include/nlohmann/detail/meta/identity_tag.hpp:
-
-/usr/local/include/nlohmann/detail/meta/cpp_future.hpp:
-
-/usr/local/include/nlohmann/detail/macro_unscope.hpp:
-
-/usr/local/include/nlohmann/detail/macro_scope.hpp:
-
-/usr/local/include/nlohmann/detail/json_ref.hpp:
-
-/usr/local/include/nlohmann/detail/json_custom_base_class.hpp:
-
-/usr/local/include/nlohmann/detail/iterators/json_reverse_iterator.hpp:
-
-/usr/local/include/nlohmann/detail/iterators/iterator_traits.hpp:
-
-/usr/local/include/nlohmann/detail/iterators/internal_iterator.hpp:
-
-/usr/local/include/nlohmann/detail/input/position_t.hpp:
-
-/usr/local/include/nlohmann/detail/hash.hpp:
-
-/usr/local/include/nlohmann/detail/exceptions.hpp:
-
-/usr/local/include/nlohmann/detail/conversions/to_chars.hpp:
-
-/usr/local/include/nlohmann/detail/conversions/from_json.hpp:
-
-/usr/local/include/nlohmann/byte_container_with_subtype.hpp:
 
 /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/macmanager/core/include/run_app.h:
 
@@ -3166,8 +2981,6 @@ macmanager/core/CMakeFiles/macmanager_core.dir/src/file_manager.cpp.o: /Users/fi
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/_types/_intptr_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/_types/_int32_t.h:
-
-/usr/local/include/nlohmann/detail/iterators/primitive_iterator.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/_types/_int16_t.h:
 
@@ -3547,6 +3360,8 @@ macmanager/core/CMakeFiles/macmanager_core.dir/src/file_manager.cpp.o: /Users/fi
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/is_nothrow_constructible.h:
 
+/Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/macmanager/core/include/nlohmann/json.hpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/limits.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/is_nothrow_assignable.h:
@@ -3734,8 +3549,6 @@ macmanager/core/CMakeFiles/macmanager_core.dir/src/file_manager.cpp.o: /Users/fi
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/join_view.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/nat.h:
-
-/usr/local/include/nlohmann/detail/input/parser.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/is_literal_type.h:
 
@@ -4001,8 +3814,6 @@ macmanager/core/CMakeFiles/macmanager_core.dir/src/file_manager.cpp.o: /Users/fi
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__functional/identity.h:
 
-/usr/local/include/nlohmann/detail/input/binary_reader.hpp:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__utility/to_underlying.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__string/constexpr_c_functions.h:
@@ -4032,8 +3843,6 @@ macmanager/core/CMakeFiles/macmanager_core.dir/src/file_manager.cpp.o: /Users/fi
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/_types/_uint32_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/ranges_for_each_n.h:
-
-/usr/local/include/nlohmann/thirdparty/hedley/hedley.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__format/formatter_output.h:
 
@@ -4077,8 +3886,6 @@ macmanager/core/CMakeFiles/macmanager_core.dir/src/file_manager.cpp.o: /Users/fi
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/is_empty.h:
 
-/usr/local/include/nlohmann/detail/abi_macros.hpp:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__filesystem/space_info.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/max_element.h:
@@ -4108,8 +3915,6 @@ macmanager/core/CMakeFiles/macmanager_core.dir/src/file_manager.cpp.o: /Users/fi
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__filesystem/copy_options.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__exception/nested_exception.h:
-
-/usr/local/include/nlohmann/detail/conversions/to_json.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/remove_reference.h:
 
@@ -4145,8 +3950,6 @@ macmanager/core/CMakeFiles/macmanager_core.dir/src/file_manager.cpp.o: /Users/fi
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__concepts/semiregular.h:
 
-/usr/local/include/nlohmann/detail/string_concat.hpp:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__concepts/same_as.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__tree:
@@ -4154,8 +3957,6 @@ macmanager/core/CMakeFiles/macmanager_core.dir/src/file_manager.cpp.o: /Users/fi
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/iterator:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__filesystem/path.h:
-
-/usr/local/include/nlohmann/detail/meta/call_std/begin.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/concepts:
 
@@ -4173,8 +3974,6 @@ macmanager/core/CMakeFiles/macmanager_core.dir/src/file_manager.cpp.o: /Users/fi
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__concepts/derived_from.h:
 
-/usr/local/include/nlohmann/detail/input/lexer.hpp:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/cstdio:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/_types/_int64_t.h:
@@ -4190,8 +3989,6 @@ macmanager/core/CMakeFiles/macmanager_core.dir/src/file_manager.cpp.o: /Users/fi
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/is_integral.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/copy_cv.h:
-
-/usr/local/include/nlohmann/detail/output/serializer.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__concepts/constructible.h:
 
@@ -4278,8 +4075,6 @@ macmanager/core/CMakeFiles/macmanager_core.dir/src/file_manager.cpp.o: /Users/fi
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__filesystem/recursive_directory_iterator.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__bit/bit_width.h:
-
-/usr/local/include/nlohmann/detail/meta/call_std/end.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/three_way_comp_ref_type.h:
 
@@ -4407,8 +4202,6 @@ macmanager/core/CMakeFiles/macmanager_core.dir/src/file_manager.cpp.o: /Users/fi
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/remove_copy_if.h:
 
-/usr/local/include/nlohmann/detail/iterators/iter_impl.hpp:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/cstring:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__compare/is_eq.h:
@@ -4530,8 +4323,6 @@ macmanager/core/CMakeFiles/macmanager_core.dir/src/file_manager.cpp.o: /Users/fi
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/move.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/ranges_pop_heap.h:
-
-/usr/local/include/nlohmann/detail/meta/std_fs.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/pstl_replace.h:
 
@@ -4739,8 +4530,6 @@ macmanager/core/CMakeFiles/macmanager_core.dir/src/file_manager.cpp.o: /Users/fi
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/partition_point.h:
 
-/usr/local/include/nlohmann/detail/input/input_adapters.hpp:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__filesystem/file_type.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__functional/perfect_forward.h:
@@ -4774,8 +4563,6 @@ macmanager/core/CMakeFiles/macmanager_core.dir/src/file_manager.cpp.o: /Users/fi
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/copy_backward.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/is_core_convertible.h:
-
-/usr/local/include/nlohmann/detail/json_pointer.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/ranges_shuffle.h:
 
@@ -4820,8 +4607,6 @@ macmanager/core/CMakeFiles/macmanager_core.dir/src/file_manager.cpp.o: /Users/fi
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/replace_if.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/shift_right.h:
-
-/usr/local/include/nlohmann/adl_serializer.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/search.h:
 
@@ -4879,8 +4664,6 @@ macmanager/core/CMakeFiles/macmanager_core.dir/src/file_manager.cpp.o: /Users/fi
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/ranges_lexicographical_compare.h:
 
-/usr/local/include/nlohmann/detail/iterators/iteration_proxy.hpp:
-
 /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include/__stddef_wchar_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__memory/allocate_at_least.h:
@@ -4921,8 +4704,6 @@ macmanager/core/CMakeFiles/macmanager_core.dir/src/file_manager.cpp.o: /Users/fi
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/equal.h:
 
-/usr/local/include/nlohmann/detail/output/binary_writer.hpp:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/pstl_backends/cpu_backends/stable_sort.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__memory/uninitialized_algorithms.h:
@@ -4940,8 +4721,6 @@ macmanager/core/CMakeFiles/macmanager_core.dir/src/file_manager.cpp.o: /Users/fi
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/ranges_count_if.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/transform.h:
-
-/usr/local/include/nlohmann/detail/input/json_sax.hpp:
 
 /Users/finnmcmillion/Desktop/PORTFOLIO/MacAssist/macmanager/core/src/database.cpp:
 
@@ -4999,8 +4778,6 @@ macmanager/core/CMakeFiles/macmanager_core.dir/src/file_manager.cpp.o: /Users/fi
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/ranges_adjacent_find.h:
 
-/usr/local/include/nlohmann/json_fwd.hpp:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/owning_view.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/iterator_operations.h:
@@ -5052,8 +4829,6 @@ macmanager/core/CMakeFiles/macmanager_core.dir/src/file_manager.cpp.o: /Users/fi
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__filesystem/perm_options.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/min.h:
-
-/usr/local/include/nlohmann/detail/meta/detected.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/fill_n.h:
 

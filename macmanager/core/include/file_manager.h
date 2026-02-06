@@ -21,9 +21,11 @@ namespace macmanager {
         bool find(const std::string& filename, std::filesystem::path& filepath);
         void refresh_db_files(const std::vector<std::string>& locationStrs, const std::set<std::string>& fileTypes, int numWorkers, Database& db);
         void stage_files(const std::vector<std::filesystem::path>& files);
+
         private:
-        std::filesystem::path root;
-        std::filesystem::path string_to_path(const std::string& str);
+            std::filesystem::path root;
+            std::filesystem::path string_to_path(const std::string& str);
+            std::vector<std::filesystem::path> monitoredDirectories;
 
     };
 }

@@ -5,9 +5,8 @@
 #include "file_manager.h"
 
 namespace macmanager {
-    macmanager::FileManager fm;
-    std::string dbPath = std::string(std::getenv("HOME")) + "/Library/Application Support/MacAssistant/state.db";
-    macmanager::Database db(dbPath);
+    // NOTE: Removed global fm and db - they caused static initialization issues
+    // when using the Swift bridge. The bridge creates its own handle with fm/db.
 
     void refresh_db(){
         std::set<std::string> types;
@@ -30,8 +29,9 @@ namespace macmanager {
         files.push_back(f2);
         files.push_back(f3);
 
-        fm.stage_files(files);
-
+        // Create local FileManager for CLI use
+       // FileManager fm;
+     //   fm.stage_files(files);
     }
 
     int run_app(int argc, char** argv) {
@@ -43,7 +43,10 @@ namespace macmanager {
         std::string usage = argv[1];
         std::string args = argv[2];
         
-        db.printAllTablesAndSchema();
+        // Create local db instance for CLI use
+      //  std::string dbPath = std::string(std::getenv("HOME")) + "/Library/Application Support/MacAssistant/state.db";
+     //   Database db(dbPath);
+    //    db.printAllTablesAndSchema();
        
        //db.listObjects();
     //   stage_files();
